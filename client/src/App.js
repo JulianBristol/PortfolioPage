@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutMe from './components/AboutMe.jsx';
+import AboutMe from './components/Home.jsx';
 
 function App() {
   return (

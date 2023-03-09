@@ -1,8 +1,8 @@
 import React from 'react';
 
 const aboutMe = () => (
-        <div>
-            <div id="right">
+        <div id="home">
+            <div className="rightDiv">
             <h1>Hey, it&apos;s me,
                 <div id="name"><span className='emph1'> Julian</span> <span className="emph2">Bristol</span></div>
                 </h1>
@@ -13,7 +13,7 @@ const aboutMe = () => (
                 <button>LinkedIn</button>
                 <button>GitHub</button>
                 </div>
-                <div>
+                <div className="leftDiv">
                     <img
                     src="https://avatars.githubusercontent.com/u/82460914?v=4"
                     alt="The sexiest being on the planet"
