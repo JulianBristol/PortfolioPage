@@ -1,6 +1,6 @@
 import React from 'react';
 
-const aboutMe = () => (
+const Home = () => (
         <div id="home">
             <div className="rightDiv">
             <h1>Hey, it&apos;s me,
@@ -23,4 +23,4 @@ const aboutMe = () => (
         </div>
 );
 
-export default aboutMe;
+export default Home;
