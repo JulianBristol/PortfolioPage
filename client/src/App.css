@@ -1,0 +1,36 @@
+.App {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #070707;
+    height: 2000px
+}
+.pageContent {
+    /* position: absolute;
+    top: 92px; */
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+    background: transparent;
+    backdrop-filter: blur(3px);
+    width: 100%;
+}
+#headerBorder{
+    height: 3px;
+    position: fixed;
+    top: 92px;
+    background: #8c1627;
+    width: 100%;
+}
+#headerBorderBlur{
+    height: 9px;
+    position: fixed;
+    top: 92px;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    width: 100%;
+}
+.spacer{
+    height: 10vh;
+    background-color: #1b1b1b;
+}
+.pageContent>.spacer {
+    height: 20vh;
+}

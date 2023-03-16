@@ -1,0 +1,67 @@
+.iconTextContainer{
+    font-size: 2.5rem;
+      font-family: Lobster;
+      color: #bfbe5f;
+      text-shadow: 2px 2px 3px #8c162732;
+      padding: 0 20px;
+      margin-top: -10px;
+}
+.capitalizedIconText{
+    font-size: 4rem;
+    color: #8c1627;
+}
+    
+    @-webkit-keyframes breathing {
+    0% {
+      -webkit-filter: saturate(100%);
+      -moz-filter: saturate(100%);
+      -o-filter: saturate(100%);
+      -ms-filter: saturate(100%);
+      filter: saturate(100%);
+    }
+    50% {
+        -webkit-filter: saturate(150%);
+        -moz-filter: saturate(150%);
+        -o-filter: saturate(150%);
+        -ms-filter: saturate(150%);
+        filter: saturate(150%);
+    }
+    100% {
+        -webkit-filter: saturate(100%);
+        -moz-filter: saturate(100%);
+        -o-filter: saturate(100%);
+        -ms-filter: saturate(100%);
+        filter: saturate(100%);
+      }
+  }
+  @keyframes breathing {
+    0% {
+        -webkit-filter: saturate(100%);
+        -moz-filter: saturate(100%);
+        -o-filter: saturate(100%);
+        -ms-filter: saturate(100%);
+        filter: saturate(100%);
+      }
+      50% {
+        -webkit-filter: saturate(150%);
+        -moz-filter: saturate(150%);
+        -o-filter: saturate(150%);
+        -ms-filter: saturate(150%);
+        filter: saturate(150%);
+      }
+      100% {
+        -webkit-filter: saturate(100%);
+        -moz-filter: saturate(100%);
+        -o-filter: saturate(100%);
+        -ms-filter: saturate(100%);
+        filter: saturate(100%);
+      }
+  }
+  .iconTextContainer {
+    -webkit-animation: breathing 15s linear infinite;
+    -moz-animation: breathing 15s linear infinite;
+    -ms-animation: breathing 15s linear infinite;
+    -o-animation: breathing 15s linear infinite;
+    animation: breathing 15s linear infinite;
+    transition: all 5s linear;
+  }

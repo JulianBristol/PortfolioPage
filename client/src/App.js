@@ -1,16 +1,21 @@
 import React from 'react';
-import BackgroundTextImg from './components/backgroundText/BackgroundTextImg.jsx';
 import Home from './components/Home.jsx';
 import Header from './header/Header.jsx';
+import './App.css';
+import BackgroundShapes from './components/Background/BackgroundShapes.jsx';
 
 function App() {
   return (
-    <div className="App" >
-      <BackgroundTextImg/>
-    <div >
-      <Header />
+    <div id ='main_page' className="App">
+      <BackgroundShapes />
+      <div className='spacer'/>
+    <div className='pageContent'>
       <Home />
+      <div className='spacer'/>
       </div>
+      <Header />
+      <div id='headerBorder'/>
+      <div id='headerBorderBlur'/>
     </div>
   );
 }
