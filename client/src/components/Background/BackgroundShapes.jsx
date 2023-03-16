@@ -92,8 +92,25 @@ const BackgroundShapes = () => {
     return () => window.removeEventListener('mousemove', parallax);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const pageTop = document.scrollingElement.scrollTop;
+      const target = document.getElementById('shapesContainer');
+      const scrollFactor = 0.7;
+      const parallaxValue = Math.floor(pageTop * scrollFactor);
+
+      const regex = /translate:\s*\d+px\s+(\d+)px;/;
+      const updatedStyle = target.getAttribute('style').replace(regex, `translate: 30px ${parallaxValue}px;`);
+      target.setAttribute('style', updatedStyle);
+    };
+
+    // Add event listener
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div id='shapesContainer' style={{ height: '100vh' }}>
+    <div id='shapesContainer' style={{ translate: '0 92px' }}>
       <IoLogoNodejs className={`bgShape ${randomizeColor()} ${randomizeSize()} x0 y0 shapeGp1`}/>
       {/* <IoLogoGithub className={`bgShape ${randomizeColor()} ${randomizeSize()} x2 y0 shapeGp4`}/> */}
 

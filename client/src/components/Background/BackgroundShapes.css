@@ -1,6 +1,11 @@
 #shapesContainer {
-    overflow-y: hidden;
-    height: 92px !important;
+    overflow: hidden;
+    /* height: 92px !important;
+    background-color: red; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: -30px;
 }
 .sm {
     font-size: 1rem;
@@ -72,5 +77,5 @@
     top: 103%;
 }
 .shapeGp2 {
-    /* transition: transform 0.09s ease-out; */
+    /* transition: transform 0.4s ease-out; */
 }

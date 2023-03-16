@@ -6,7 +6,7 @@ import BackgroundShapes from './components/Background/BackgroundShapes.jsx';
 
 function App() {
   return (
-    <div className="App">
+    <div id ='main_page' className="App">
       <BackgroundShapes />
       <div className='spacer'/>
     <div className='pageContent'>
