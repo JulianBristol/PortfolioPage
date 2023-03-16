@@ -1,0 +1,76 @@
+#shapesContainer {
+    overflow-y: hidden;
+    height: 92px !important;
+}
+.sm {
+    font-size: 1rem;
+}
+.md {
+    font-size: 2rem;
+}
+.lg {
+    font-size: 3rem;
+}
+.reds {
+    color: #EE0000;
+}
+.yellows {
+    color: #EEee00;
+}
+.greens {
+    color: #00EE00;
+}
+.blues {
+    color: #3366EE;
+}
+.pinks {
+    color: #FFAAAA;
+}
+.bgShape {
+    position: absolute;
+}
+.x0 {
+    left: -3%;
+}
+.x1 {
+    left: 10%;
+}
+.x2 {
+    left: 25%;
+}
+.x3 {
+    left: 50%;
+}
+.x4 {
+    left: 80%;
+}
+.x5 {
+    left: 97%;
+}
+.x6 {
+    left: 103%;
+}
+.y0 {
+    top: -3%;
+}
+.y1 {
+    top: 10%;
+}
+.y2 {
+    top: 25%;
+}
+.y3 {
+    top: 50%;
+}
+.y4 {
+    top: 80%;
+}
+.y5 {
+    top: 97%;
+}
+.y6 {
+    top: 103%;
+}
+.shapeGp2 {
+    /* transition: transform 0.09s ease-out; */
+}
