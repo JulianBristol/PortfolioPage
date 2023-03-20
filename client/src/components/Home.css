@@ -1,0 +1,160 @@
+#welcome {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1.3s ease-in-out;
+}
+.backgroundBlur {
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
+    background-color: #33333316;
+    width: 1350px;
+    padding: 50px
+}
+.welcomeMessage{
+    height: 700px;
+    width: 1132px;
+    background-color: #dbdbdbe0;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.wcRight{
+    position: relative;
+    left: -110px;
+}
+
+.wcImgBG{
+    position: absolute;
+    margin-top: -1%;
+    width: 538px;
+    height: 646px;
+    border-radius: 56px 56px 56px 0px;
+   }
+   .A{
+    background-color: #360A11;
+    left: 0px;
+    top: 0px;
+    -webkit-animation: wobbling 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    -moz-animation: wobbling 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    -ms-animation: wobbling 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    -o-animation: wobbling 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite; 
+    animation: wobbling 7s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+   }
+   .B{
+    background-color: #6D1421;
+    left: 15px;
+    top: -15px;
+    -webkit-animation: wobbling 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+    -moz-animation: wobbling 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+    -ms-animation: wobbling 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+    -o-animation: wobbling 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite; 
+    animation: wobbling 7.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+   }
+   .C{
+    background-color: #8C1627;
+    left: 30px;
+    top: -35px;
+    -webkit-animation: wobbling 12.1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+    -moz-animation: wobbling 12.1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+    -ms-animation: wobbling 12.1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+    -o-animation: wobbling 12.1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+    animation: wobbling 12.1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+   }
+
+   .wcImg{
+    width: 470px;
+    height: 627px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.wcLeft{
+    position: absolute;
+    margin-left: 350px;
+}
+.text {
+    mix-blend-mode: difference;
+    color: rgb(255, 212, 134);
+    font-family: Gelasio;
+}
+
+.wcLeft h1 {
+    font-size: 3.1rem;
+    margin-left: 150px;
+}
+.wcLeft .JulianBristol {
+    margin-top: 25px;
+    margin-left: -200px;
+    font-size: 8rem;
+    font-weight: 100;
+    font-family: Lobster;
+}
+.wcLeft .emph1 {
+    font-size: 10rem;
+    line-height: 0px;
+}
+.wcLeft p {
+    margin: -20px auto 35px 140px;
+    width: 640px;
+    font-size: 2.5rem;
+}
+.wcLeft .btnLinks{
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@-webkit-keyframes wobbling {
+  0% {
+      margin-top: -10%;
+      margin-left: 0%;
+    }
+    20% {
+      margin-top: -15%;
+      margin-left: 7%;
+    }
+    50% {
+      margin-top: -8%;
+      margin-left: 13%;
+    }
+    70% {
+      margin-top: -0%;
+      margin-left: 5%;
+    }
+    100% {
+      margin-top: -10%;
+      margin-left: 0%;
+    }
+  }
+  @keyframes wobbling {
+    0% {
+        margin-top: -1%;
+        margin-left: 0%;
+      }
+      20% {
+        margin-top: -2%;
+      }
+      30% {
+        margin-left: 1%;
+      }
+      50% {
+          margin-top: -1%;
+          margin-left: 0%;
+        }
+        70% {
+          margin-top: -2%;
+        }
+        80% {
+          margin-left: -1%;
+        }
+      100% {
+        margin-top: -1%;
+        margin-left: 0%;
+      }
+    }
