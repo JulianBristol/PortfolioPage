@@ -7,9 +7,12 @@ import BackgroundShapes from './components/Background/BackgroundShapes.jsx';
 function App() {
   return (
     <div id ='main_page' className="App">
+      <div >
+
       <BackgroundShapes />
-      <div className='spacer'/>
+      </div>
     <div className='pageContent'>
+      <div className='spacer'/>
       <Home />
       <div className='spacer'/>
       </div>
