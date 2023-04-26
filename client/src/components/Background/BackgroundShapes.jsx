@@ -1,4 +1,4 @@
-/* eslint-disable no-param-reassign */
+/* eslint-disable prefer-const */
 import React, { useEffect } from 'react';
 import { IoLogoNodejs, IoLogoHtml5, IoLogoGithub, IoLogoCss3 } from 'react-icons/io';
 import { HiStar, HiCloud } from 'react-icons/hi2';
@@ -43,56 +43,6 @@ const BackgroundShapes = () => {
   };
 
   useEffect(() => {
-    const parallax = (e) => {
-      const wWidth = window.innerWidth / 2;
-      const wHeight = window.innerHeight / 2;
-      const mouseX = e.clientX;
-      const mouseY = e.clientY;
-
-      const grp1 = document.querySelectorAll('.shapeGp1');
-      const grp2 = document.querySelectorAll('.shapeGp2');
-      const grp3 = document.querySelectorAll('.shapeGp3');
-      const grp4 = document.querySelectorAll('.shapeGp4');
-
-      grp1.forEach((selection) => {
-        selection.style.transform = `
-        translateX(${50 - (mouseX - wWidth) * 0.1}px)
-        translateY(${50 - (mouseY - wHeight) * 0.1}px)
-        rotate(${-15 + mouseX * 0.05}deg)
-        `;
-      });
-
-      grp2.forEach((selection) => {
-        selection.style.transform = `
-        translateX(${50 + (mouseX - wWidth) * 0.1}px)
-        translateY(${50 + (mouseY - wHeight) * 0.1}px)
-        rotate(${-25 + mouseY * 0.15}deg)
-        `;
-      });
-
-      grp3.forEach((selection) => {
-        selection.style.transform = `
-        translateY(${50 + (-mouseX - wWidth) * 0.1}px)
-        translateX(${50 - (mouseY - wHeight) * 0.3}px)
-        rotate(${25 - mouseX * 0.35}deg)
-        `;
-      });
-
-      grp4.forEach((selection) => {
-        selection.style.transform = `
-        translateX(${50 - (mouseX - wWidth) * 0.1}px)
-        translateY(${50 + (mouseY - wHeight) * 0.1}px)
-        rotate(${-25 + mouseY * 0.45}deg)
-        `;
-      });
-    };
-
-    // Add event listener
-    window.addEventListener('mousemove', parallax);
-    return () => window.removeEventListener('mousemove', parallax);
-  }, []);
-
-  useEffect(() => {
     const handleScroll = () => {
       const pageTop = document.scrollingElement.scrollTop;
       const target = document.getElementById('shapesContainer');
@@ -109,39 +59,67 @@ const BackgroundShapes = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  let centerX = window.innerWidth / 2;
+  let centerY = window.innerHeight / 2;
+
+  const moveComponents = (e) => {
+    let amountMovedX = (centerX - e.clientX) / 20;
+    let amountMovedY = (centerY - e.clientY) / 20;
+
+    $('.shapeGp1')
+      .css('transform', `translate3d(${amountMovedX * 9}px, ${amountMovedY * 4}px, 0)
+      rotate(${amountMovedY * 4}deg)`);
+    $('.shapeGp2')
+      .css('transform', `translate3d(${amountMovedX * -4}px, ${amountMovedY * 2}px, 0)
+      rotate(${amountMovedY * 2}deg)`);
+    $('.shapeGp3')
+      .css('transform', `translate3d(${amountMovedX * -9}px, ${amountMovedY * -2}px, 0)
+      rotate(${amountMovedY * -4}deg)`);
+    $('.shapeGp4')
+      .css('transform', `translate3d(${amountMovedX * 2}px, ${amountMovedY * -6}px, 0)
+      rotate(${amountMovedY * 4}deg)`);
+    $('.C')
+      .css('transform', `translate3d(${amountMovedX / 2}px, ${amountMovedY / 6}px, 0)`);
+  };
+
+  let count = 0;
+  useEffect(() => {
+
+  }, [document.body.addEventListener('mousemove', (e) => {
+    if (count % 20 === 0) {
+      moveComponents(e);
+    }
+    /* eslint-disable no-plusplus */
+    count++;
+  })]);
+
   return (
     <div id='shapesContainer' style={{ translate: '0 92px' }}>
       <IoLogoNodejs className={`bgShape ${randomizeColor()} ${randomizeSize()} x0 y0 shapeGp1`}/>
-      {/* <IoLogoGithub className={`bgShape ${randomizeColor()} ${randomizeSize()} x2 y0 shapeGp4`}/> */}
 
-      <IoLogoGithub className={`bgShape ${randomizeColor()} lg x1 y1 shapeGp3`}/>
-      {/* <FaReact className='bgShape pinks sm x1 y1 shapeGp1'/> */}
+      <IoLogoGithub className={`bgShape ${randomizeColor()} lg x1 y1 shapeGp2`}/>
       <FaReact className='bgShape pinks sm x3 y1 shapeGp4'/>
       <IoLogoCss3 className={`bgShape ${randomizeColor()} ${randomizeSize()} x4 y1 shapeGp3`}/>
 
       <IoLogoHtml5 className={`bgShape ${randomizeColor()} ${randomizeSize()} x4 y2 shapeGp4`}/>
-      <IoLogoCss3 className={`bgShape ${randomizeColor()} ${randomizeSize()} x3 y2 shapeGp3`}/>
+      <IoLogoCss3 className={`bgShape ${randomizeColor()} ${randomizeSize()} x3 y2 shapeGp1`}/>
       <HiStar className={`bgShape ${randomizeColor()} ${randomizeSize()} x2 y2 shapeGp3`}/>
 
-      <HiCloud className={`bgShape ${randomizeColor()} lg x1 y3 shapeGp3`}/>
-      {/* <HiCode className={`bgShape ${randomizeColor()} ${randomizeSize()} x2 y3 shapeGp1`}/> */}
+      <HiCloud className={`bgShape ${randomizeColor()} lg x1 y3 shapeGp2`}/>
       <IoLogoNodejs className={`bgShape ${randomizeColor()} ${randomizeSize()} x3 y3 shapeGp2`}/>
       <HiOutlineCog className={`bgShape ${randomizeColor()} ${randomizeSize()} x4 y3 shapeGp3`}/>
 
-      {/* <IoLogoNodejs className={`bgShape ${randomizeColor()} ${randomizeSize()} x2 y4 shapeGp4`}/> */}
       <HiCode className={`bgShape ${randomizeColor()} ${randomizeSize()} x2 y4 shapeGp1`}/>
-      <IoLogoHtml5 className={`bgShape ${randomizeColor()} ${randomizeSize()} x3 y4 shapeGp4`}/>
+      <IoLogoHtml5 className={`bgShape ${randomizeColor()} ${randomizeSize()} x3 y4 shapeGp2`}/>
       <FaReact className={`bgShape ${randomizeColor()} ${randomizeSize()} x4 y4 shapeGp1`}/>
 
       <IoLogoCss3 className={`bgShape ${randomizeColor()} ${randomizeSize()} x0 y5 shapeGp1`}/>
       <HiCode className={`bgShape ${randomizeColor()} ${randomizeSize()} x1 y5 shapeGp4`}/>
       <IoLogoNodejs className={`bgShape ${randomizeColor()} ${randomizeSize()} x5 y5 shapeGp4`}/>
-      {/* <FaReact className={`bgShape ${randomizeColor()} ${randomizeSize()} x6 y6 shapeGp1`}/> */}
 
-      <IoLogoGithub className={`bgShape ${randomizeColor()} lg x2 y6 shapeGp3`}/>
+      <IoLogoGithub className={`bgShape ${randomizeColor()} lg x2 y6 shapeGp2`}/>
       <IoLogoHtml5 className={`bgShape ${randomizeColor()} ${randomizeSize()} x3 y6 shapeGp4`}/>
       <IoLogoNodejs className={`bgShape ${randomizeColor()} ${randomizeSize()} x4 y6 shapeGp3`}/>
-      {/* <IoLogoCss3 className={`bgShape ${randomizeColor()} ${randomizeSize()} x6 y6 shapeGp3`}/> */}
     </div>
   );
 };
