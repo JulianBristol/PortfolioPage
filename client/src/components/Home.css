@@ -12,16 +12,66 @@
     justify-content: center;
     backdrop-filter: blur(3px);
     border-radius: 15px;
-    background-color: #33333316;
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 50% 50%, #33333316 0%, #8C162700 95%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 50% 50%, #33333316 0%, #8C162700 95%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 50% 50%, #33333316 0%, #8C162700 95%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 50% 50%, #33333316 0%, #8C162700 95%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 50% 50%, #33333316 0%, #8C162700 95%);
     width: 1350px;
     padding: 50px
+}
+.welcomeMessage::before{
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  height: 730px;
+  width: 1202px;
+  margin-top: -14.5px;
+  margin-left: -34.5px;
+  border-radius: 5px;
+
+  /* ff 3.6+ */
+  background:-moz-linear-gradient(180deg, #ECEA33 0%, #7B1D2B00 15%, #7B1D2B00 85%, #8C1627 100%); 
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-linear-gradient(180deg, #ECEA33 0%, #7B1D2B00 15%, #7B1D2B00 85%, #8C1627 100%);
+  /* opera 11.10+ */
+  background:-o-linear-gradient(180deg, #ECEA33 0%, #7B1D2B00 15%, #7B1D2B00 85%, #8C1627 100%);
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8C1627', endColorstr='#ECEA33', GradientType=1 );
+  /* ie 10+ */
+  background:-ms-linear-gradient(180deg, #ECEA33 0%, #7B1D2B00 15%, #7B1D2B00 85%, #8C1627 100%);
+  /* global 94%+ browsers support */
+  background:linear-gradient(180deg, #ECEA33 0%, #7B1D2B00 15%, #7B1D2B00 85%, #8C1627 100%);
 }
 .welcomeMessage{
     height: 700px;
     width: 1132px;
-    background-color: #dbdbdbe0;
+    background-color: #090203;
     border-radius: 5px;
     padding: 10px 30px;
+}
+.welcomeMessage::after{
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -41;
+  height: 720px;
+  width: 1192px;
+  margin-top: -10px;
+  margin-left: -30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 5px #bfbd5f5c;
+  background: transparent;
 }
 
 .wcRight{
@@ -60,11 +110,6 @@
     background-color: #8C1627;
     left: 30px;
     top: -35px;
-    -webkit-animation: wobbling 12.1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
-    -moz-animation: wobbling 12.1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
-    -ms-animation: wobbling 12.1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
-    -o-animation: wobbling 12.1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
-    animation: wobbling 12.1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
    }
 
    .wcImg{

@@ -14,7 +14,7 @@ const Home = () => {
 <div className='welcomeMessage'>
 
     <div className='wcRight'>
-        <div className='wcImgBG A' style={{ backgroundColor: '#360A11' }}>
+        <div className='wcImgBG A'>
             </div>
         <div className='wcImgBG B'>
         </div>

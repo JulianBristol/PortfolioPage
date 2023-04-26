@@ -1,11 +1,16 @@
 #shapesContainer {
     overflow: hidden;
-    /* height: 92px !important;
-    background-color: red; */
     height: 100%;
     width: 100%;
     position: absolute;
     left: -30px;
+}
+.bgShape {
+    position: absolute;
+    -webkit-transition: all 1.5s cubic-bezier(0.215, 0.61, 0.355, 0.95);
+    -moz-transition: all 1.5s cubic-bezier(0.215, 0.61, 0.355, 0.95);
+    -o-transition: all 1.5s cubic-bezier(0.215, 0.61, 0.355, 0.95);
+    transition: all 1.5s cubic-bezier(0.215, 0.61, 0.355, 0.95);
 }
 .sm {
     font-size: 1rem;
@@ -30,9 +35,6 @@
 }
 .pinks {
     color: #FFAAAA;
-}
-.bgShape {
-    position: absolute;
 }
 .x0 {
     left: -3%;
@@ -75,7 +77,4 @@
 }
 .y6 {
     top: 103%;
-}
-.shapeGp2 {
-    transition: transform 0.4s linear;
 }
