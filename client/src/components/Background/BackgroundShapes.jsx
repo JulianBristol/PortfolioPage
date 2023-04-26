@@ -1,4 +1,5 @@
 /* eslint-disable prefer-const */
+/* eslint-disable */
 import React, { useEffect } from 'react';
 import { IoLogoNodejs, IoLogoHtml5, IoLogoGithub, IoLogoCss3 } from 'react-icons/io';
 import { HiStar, HiCloud } from 'react-icons/hi2';
@@ -92,7 +93,7 @@ const BackgroundShapes = () => {
   })]);
 
   return (
-    <div id='shapesContainer' style={{ translate: '0 92px' }}>
+    <div id='shapesContainer' style={{ translate: '0 0px' }}>
       <IoLogoNodejs className={`bgShape ${randomizeColor()} ${randomizeSize()} x0 y0 shapeGp1`}/>
 
       <IoLogoGithub className={`bgShape ${randomizeColor()} lg x1 y1 shapeGp2`}/>
@@ -118,6 +119,19 @@ const BackgroundShapes = () => {
       <IoLogoGithub className={`bgShape ${randomizeColor()} lg x2 y6 shapeGp2`}/>
       <IoLogoHtml5 className={`bgShape ${randomizeColor()} ${randomizeSize()} x3 y6 shapeGp4`}/>
       <IoLogoNodejs className={`bgShape ${randomizeColor()} ${randomizeSize()} x4 y6 shapeGp3`}/>
+
+
+
+
+
+
+      <IoLogoNodejs className={`bgShape ${randomizeColor()} ${randomizeSize()} x3 y5 shapeGp2`}/>
+      <HiOutlineCog className={`bgShape ${randomizeColor()} ${randomizeSize()} x4 y5 shapeGp3`}/>
+      
+      
+      <HiCode className={`bgShape ${randomizeColor()} ${randomizeSize()} x2 y6 shapeGp1`}/>
+      <IoLogoNodejs className={`bgShape ${randomizeColor()} ${randomizeSize()} x3 y6 shapeGp2`}/>
+      <FaReact className={`bgShape ${randomizeColor()} ${randomizeSize()} x4 y6 shapeGp1`}/>
     </div>
   );
 };

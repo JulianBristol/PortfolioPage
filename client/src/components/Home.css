@@ -73,13 +73,17 @@
   box-shadow: 0px 0px 15px 5px #bfbd5f5c;
   background: transparent;
 }
+.welcomeContent{
+  top: 30px;
+  position: relative;
+}
 
-.wcRight{
+.welcomeLeft{
     position: relative;
     left: -110px;
 }
 
-.wcImgBG{
+.welcomeImgBG{
     position: absolute;
     margin-top: -1%;
     width: 538px;
@@ -112,14 +116,14 @@
     top: -35px;
    }
 
-   .wcImg{
+   .welcomeImg{
     width: 470px;
     height: 627px;
     position: absolute;
     bottom: 0px;
 }
 
-.wcLeft{
+.welcomeRight{
     position: absolute;
     margin-left: 350px;
 }
@@ -129,27 +133,28 @@
     font-family: Gelasio;
 }
 
-.wcLeft h1 {
+.welcomeRight h1 {
     font-size: 3.1rem;
     margin-left: 150px;
+    margin-top: 30px;
 }
-.wcLeft .JulianBristol {
+.welcomeRight .JulianBristol {
     margin-top: 25px;
     margin-left: -200px;
     font-size: 8rem;
     font-weight: 100;
     font-family: Lobster;
 }
-.wcLeft .emph1 {
+.welcomeRight .emph1 {
     font-size: 10rem;
     line-height: 0px;
 }
-.wcLeft p {
+.welcomeRight p {
     margin: -20px auto 35px 140px;
     width: 640px;
     font-size: 2.5rem;
 }
-.wcLeft .btnLinks{
+.welcomeRight .btnLinks{
     margin-left: 100px;
     display: flex;
     justify-content: space-evenly;
