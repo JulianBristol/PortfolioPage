@@ -78,8 +78,6 @@ const BackgroundShapes = () => {
     $('.shapeGp4')
       .css('transform', `translate3d(${amountMovedX * 2}px, ${amountMovedY * -6}px, 0)
       rotate(${amountMovedY * 4}deg)`);
-    $('.C')
-      .css('transform', `translate3d(${amountMovedX / 2}px, ${amountMovedY / 6}px, 0)`);
   };
 
   let count = 0;

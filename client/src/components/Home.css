@@ -94,17 +94,17 @@
     -moz-animation: wobbling 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
     -ms-animation: wobbling 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
     -o-animation: wobbling 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite; 
-    animation: wobbling 7s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    animation: wobbling 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
    }
    .B{
     background-color: #6D1421;
-    left: 15px;
-    top: -15px;
+    left: 35px;
+    top: -35px;
     -webkit-animation: wobbling 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
-    -moz-animation: wobbling 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
-    -ms-animation: wobbling 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
-    -o-animation: wobbling 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite; 
-    animation: wobbling 7.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+    -moz-animation: wobbling 12s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+    -ms-animation: wobbling 12s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+    -o-animation: wobbling 12s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite; 
+    animation: wobbling 12s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
    }
    .C{
     background-color: #8C1627;
