@@ -84,6 +84,7 @@ button:hover {
   top: 92px;
   background: #8c1627;
   width: 100%;
+  z-index: 1;
 }
 #headerBorderBlur{
   height: 9px;
@@ -92,6 +93,7 @@ button:hover {
   background: transparent;
   backdrop-filter: blur(3px);
   width: 100%;
+  z-index: 1;
 }
 .spacer{
   height: 10vh;

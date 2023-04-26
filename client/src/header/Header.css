@@ -4,7 +4,7 @@
     position: fixed;
     width: 100%;
     top: 0px;
-    /* border-bottom: 3px solid #8c1627; */
+    z-index: 1;
 }
 .navDiv{
     width: 100%;
