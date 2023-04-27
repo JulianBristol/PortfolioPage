@@ -1,19 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+/* import { styles } from '../styles'; */
+/* import { menu, close } from '../assets'; */
 import Icon from '../components/Icon Files/Icon.jsx';
 import IconText from '../components/Icon Files/IconText.jsx';
 import './Header.css';
 
-const Header = () => (
-    <div id='headerBar' style={{ height: '92px' }}>
+const Header = () => {
+  /* eslint-disable no-unused-vars */
+  const [active, setActive] = useState('');
 
-        <div className='navDiv'>
-            <div className='icon'>
-            <a href='/'>
-        <Icon />
-        <IconText/>
-        </a>
-        </div>
+  return (
+    <div id='headerBar' style={{ height: '92px' }}>
         <nav>
+            <div className='icon'>
+                <Link to='/'
+                onClick={() => {
+                  setActive('');
+                  window.scrollTo(0, 0);
+                }}>
+                    <Icon />
+                    <IconText/>
+                </Link>
+        </div>
         <ul>
             <a href='about'><li>
                 <span className='firstLetter'>a</span>BOUT
@@ -33,8 +42,8 @@ const Header = () => (
             </li></a>
         </ul>
       </nav>
-      </div>
     </div>
-);
+  );
+};
 
 export default Header;
