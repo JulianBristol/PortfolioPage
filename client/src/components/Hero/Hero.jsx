@@ -1,9 +1,9 @@
 /* eslint-disable max-len */
 import React, { useEffect } from 'react';
-import Julian from '../images/Good Enough.png';
-import './Home.css';
+import Julian from '../../images/Good Enough.png';
+import './Hero.css';
 
-const Home = () => {
+const Hero = () => {
   useEffect(() => {
     document.getElementById('welcome').style.opacity = 1;
   }, []);
@@ -47,4 +47,4 @@ const Home = () => {
         </div>
   ); };
 
-export default Home;
+export default Hero;

@@ -97,10 +97,6 @@ button:hover {
 }
 .spacer{
   height: 10vh;
-  /* background-color: #1b1b1b; */
-}
-.pageContent>.spacer {
-  height: 20vh;
 }
 
 

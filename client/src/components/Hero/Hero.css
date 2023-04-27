@@ -12,20 +12,6 @@
     justify-content: center;
     backdrop-filter: blur(3px);
     border-radius: 15px;
-    /* ff 3.6+ */
-    background:-moz-radial-gradient(circle at 50% 50%, #33333316 0%, #8C162700 95%);
-
-    /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(circle at 50% 50%, #33333316 0%, #8C162700 95%);
-
-    /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 50% 50%, #33333316 0%, #8C162700 95%);
-
-    /* ie 10+ */
-    background:-ms-radial-gradient(circle at 50% 50%, #33333316 0%, #8C162700 95%);
-
-    /* global 92%+ browsers support */
-    background:radial-gradient(circle at 50% 50%, #33333316 0%, #8C162700 95%);
     width: 1350px;
     padding: 50px
 }
@@ -86,14 +72,14 @@
 .welcomeImgBG{
     position: absolute;
     margin-top: -1%;
-    width: 538px;
-    height: 646px;
+    width: 550px;
+    height: 680px;
     border-radius: 56px 56px 56px 0px;
    }
    .A{
     background-color: #360A11;
-    left: 0px;
-    top: 0px;
+    left: 15px;
+    top: -20px;
     -webkit-animation: wobbling 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
     -moz-animation: wobbling 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
     -ms-animation: wobbling 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
@@ -117,8 +103,8 @@
    }
 
    .welcomeImg{
-    width: 470px;
-    height: 627px;
+    width: 500px;
+    height: 667px;
     position: absolute;
     bottom: 0px;
 }
@@ -150,7 +136,7 @@
     line-height: 0px;
 }
 .welcomeRight p {
-    margin: -20px auto 35px 140px;
+    margin: 0px auto 35px 140px;
     width: 640px;
     font-size: 2.5rem;
 }
