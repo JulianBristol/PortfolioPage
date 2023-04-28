@@ -11,9 +11,9 @@
     url("./font/Gelasio-Regular.ttf") format("truetype");
 }
 
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 * {
   margin: 0;
@@ -23,9 +23,11 @@
   scroll-behavior: smooth;
   color-scheme: dark;
     --red-main: #8C1627;
+    --red-neon: #CC112C;
     --yellow-main: #BFBE5F;
     --dark-main: #0E0904;
     --dark-accent: #090203;
+    --header-bg: #0e0904;
 }
 body {
   margin: 0;
@@ -82,7 +84,7 @@ button:hover {
   height: 3px;
   position: fixed;
   top: 92px;
-  background: #8c1627;
+  background: var(--red-main);
   width: 100%;
   z-index: 1;
 }
@@ -98,8 +100,6 @@ button:hover {
 .spacer{
   height: 10vh;
 }
-
-
 
 
 
@@ -302,3 +302,44 @@ button:hover {
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 } */
+
+/* Responsiveness */
+/* Small Screens - 600px */
+@media screen and (max-width: 600px){
+  .hide_sm{
+    display: none !important;
+  }
+  .show_sm {
+    display: block;
+  }
+}
+
+/* Medium Screens - 900px */
+@media screen and (max-width: 900px){
+  .hide_md{
+    display: none !important;
+  }
+  .show_md {
+    display: block !important;
+  }
+}
+
+/* Large Screens - 1200px */
+@media screen and (max-width: 1200px){
+  .hide_lg{
+    display: none !important;
+  }
+  .show_lg {
+    display: block;
+  }
+}
+
+/* Extra Large Screens - 1536px */
+@media screen and (max-width: 1536px){
+  .hide_xl{
+    display: none !important;
+  }
+  .show_xl {
+    display: block;
+  }
+}

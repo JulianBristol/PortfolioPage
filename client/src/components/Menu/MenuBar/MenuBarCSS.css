@@ -1,0 +1,53 @@
+#menuBarContainer{
+    background: linear-gradient(180deg, #713939 0%, #120606 2.92%, #120606 96.43%, #321717 97.7%, #120606 100%);
+
+    height: 75px;
+    width: 75px;
+    overflow: hidden;
+    position: absolute;
+    top: 8px;
+    right: 47px;
+    border-radius: 17px;
+    box-shadow: 0 0 5px 0px var(--red-main);
+    border: 1px solid var(--red-neon);
+    transition: all 0.5s ease-in-out;
+}
+#menuBarContainer.active{
+    background: linear-gradient(180deg, #713939 0%, #120606 1.4%, #120606 98%, #321717 99%, #120606 100%);
+
+    height: 425px;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 17px 0 0 17px;
+    box-shadow: 0 0 15px 4px var(--red-main);
+    border: 3px solid var(--red-neon);
+    border-right: 0px solid red;
+}
+.menuBtnContainer{
+    transition: all 0.5s ease-in-out;
+}
+.menuBtnContainer.active{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#menuBarContainer a{
+    background: linear-gradient(180deg, #120606 0%, #321717 1.3%, #120606 2%, #000000 2%, #060606 7.92%, #060606 97.92%, #000000 100%);
+    display: block;
+    height: 80px;
+    align-items: center;
+    text-decoration-line: none;
+}
+#menuBarContainer li{
+    position: relative;
+    list-style-type: none;
+    padding: 29px;
+    vertical-align: middle;
+    height: 20px;
+    margin: auto;
+    transition: color 0.3s ease-in-out;
+    color: #f0fff8;
+    overflow: hidden;
+    top: 2px;
+}
