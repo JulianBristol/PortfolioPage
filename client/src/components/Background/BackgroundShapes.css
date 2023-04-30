@@ -1,7 +1,7 @@
 #shapesContainer {
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 150%;
-    width: 105.4%;
+    width: 100%;
     position: absolute;
     left: -30px;
 }
