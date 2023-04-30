@@ -42,7 +42,7 @@
 .welcomeMessage{
     height: 700px;
     width: 1132px;
-    background-color: #090203;
+    background: linear-gradient(185deg, #010000, #160508);
     border-radius: 5px;
     padding: 10px 30px;
 }
