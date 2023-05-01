@@ -61,7 +61,7 @@
     color: #bfbe5f;
 }
 #headerBar .firstLetter {
-    color: #8c1627;
+    color: var(--red-main);
     line-height: 0px;
     font-size: 1.3rem;
     text-shadow: 1px 1px 3px #FFFFFF00;

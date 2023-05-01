@@ -85,7 +85,7 @@ button:hover {
   height: 3px;
   position: fixed;
   top: 92px;
-  background: var(--red-main);
+  background: var(--red-neon);
   width: 100%;
   z-index: 1;
 }

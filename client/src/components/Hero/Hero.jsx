@@ -37,7 +37,7 @@ const Hero = () => {
                                 <p className='primaryDesc'>I&apos;m a <span className='jobTitle'>Full-Stack Developer</span> who is passionate about creating interactive web applications as well as developing interesting software and experiences.</p>
                                 <div className='secondaryDesc'>
                                 <p>I am a philomath and a self-proclaimed ex-evil scientist, which means that I derive joy and entertainment from learning new things.</p>
-                                <p>Where does the &quot;evil scientist&quot; part fit in?  Well, I was the type of kid who enjoyed taking apart electronic devices and game systems just to see what was inside (and maybe to steal their magnets and lasers).Over time, that destructive search for knowledge mellowed out into a more systematic approach.
+                                <p>Where does the &quot;evil scientist&quot; part fit in?  Well, I was the type of kid who enjoyed taking apart electronic devices and game systems just to see what was inside (and maybe to steal their magnets and lasers). Over time, that destructive search for knowledge mellowed out into a more systematic approach.
                                 </p>
                                 <p>What does this mean for you? I crave to learn new things, whether they be software, processes, or systems. Teach me how to do something and I will do it better and faster than you expected. I am a hard worker who goes above and beyond not because it is expected of me, but rather because that is who I am.</p>
 </div>

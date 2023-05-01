@@ -7,6 +7,9 @@
     opacity: 0;
     transition: opacity 1.3s ease-in-out;
 }
+#welcome *{
+  transition: all 0.5s ease-in-out;
+}
 .backgroundBlur {
     display: flex;
     justify-content: center;
@@ -26,17 +29,17 @@
   border-radius: 5px;
 
   /* ff 3.6+ */
-  background:-moz-linear-gradient(180deg, #ECEA33 0%, #7B1D2B00 15%, #7B1D2B00 85%, #8C1627 100%); 
+  background:-moz-linear-gradient(180deg, var(--yellow-neon) 0%, #7B1D2B00 15%, #7B1D2B00 85%, var(--red-neon) 100%); 
   /* safari 5.1+,chrome 10+ */
-  background:-webkit-linear-gradient(180deg, #ECEA33 0%, #7B1D2B00 15%, #7B1D2B00 85%, #8C1627 100%);
+  background:-webkit-linear-gradient(180deg, var(--yellow-neon) 0%, #7B1D2B00 15%, #7B1D2B00 85%, var(--red-neon) 100%);
   /* opera 11.10+ */
-  background:-o-linear-gradient(180deg, #ECEA33 0%, #7B1D2B00 15%, #7B1D2B00 85%, #8C1627 100%);
+  background:-o-linear-gradient(180deg, var(--yellow-neon) 0%, #7B1D2B00 15%, #7B1D2B00 85%, var(--red-neon) 100%);
   /* ie 6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8C1627', endColorstr='#ECEA33', GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--red-neon)', endColorstr='var(--yellow-neon)', GradientType=1 );
   /* ie 10+ */
-  background:-ms-linear-gradient(180deg, #ECEA33 0%, #7B1D2B00 15%, #7B1D2B00 85%, #8C1627 100%);
+  background:-ms-linear-gradient(180deg, var(--yellow-neon) 0%, #7B1D2B00 15%, #7B1D2B00 85%, var(--red-neon) 100%);
   /* global 94%+ browsers support */
-  background:linear-gradient(180deg, #ECEA33 0%, #7B1D2B00 15%, #7B1D2B00 85%, #8C1627 100%);
+  background:linear-gradient(180deg, var(--yellow-neon) 0%, #7B1D2B00 15%, #7B1D2B00 85%, var(--red-neon) 100%);
   transition: all 0.5s ease-in-out;
 }
 .welcomeMessage.pos1::before{
@@ -62,7 +65,7 @@
   content: '';
   display: block;
   position: absolute;
-  z-index: -41;
+  z-index: -1;
   width: 1192px;
   margin-top: -10px;
   margin-left: -30px;
@@ -115,7 +118,7 @@
     animation: wobbling 12s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
    }
    .C{
-    background-color: #8C1627;
+    background-color: var(--red-main);
     left: 30px;
     top: -35px;
    }
@@ -144,13 +147,16 @@
 }
 .welcomeRight .JulianBristol {
     margin-top: 25px;
+    margin-bottom: 0px;
     margin-left: -200px;
     font-size: 8rem;
     font-weight: 100;
     font-family: Lobster;
+    width: 730px;
 }
 #welcome .paragraphContainer{
   width: 800px;
+  transition: all 0.5s ease-in-out;
   overflow: hidden;
 }
 #welcome .julian_description{
@@ -176,6 +182,12 @@
     margin: 0px auto 35px 140px;
     width: 640px;
     font-size: 2.5rem;
+    transition: all 0.5s ease-in-out;
+}
+.welcomeRight .jobTitle {
+  color: var(--yellow-neon);
+  text-shadow: 0px 0px 4px #bfbe5fbf;
+  transition: none !important;
 }
 #welcome .julian_description .secondaryDesc p{
   font-size: 1.53rem;	
@@ -203,6 +215,7 @@
   justify-content: space-evenly;
   position: relative;
   margin-left: 100px;
+  left: 0px;
   transition: all 0.5s ease-in-out;
 }
 .welcomeRight .btnLinks.btnPos1{
@@ -258,4 +271,187 @@
         margin-top: -1%;
         margin-left: 0%;
       }
+    }
+
+
+    /* Responsiveness */
+  @media screen and (max-width: 1350px) {
+  .backgroundBlur {
+      width: 950px;
+  }
+  .welcomeMessage::before{
+    width: 921px;
+  }
+  .welcomeMessage.pos1::before{
+    height: 830px;
+  }
+  .welcomeMessage.pos2::before{
+    height: 1010px;
+  }
+  .welcomeMessage{
+      width: 850px;
+  }
+  .welcomeMessage.pos1{
+      height: 800px;
+  }
+  .welcomeMessage.pos2{
+      height: 980px;
+  }
+  .welcomeMessage::after{
+    width: 910px;
+  }
+  .welcomeMessage.pos1::after{
+    height: 820px;
+  }
+  .welcomeMessage.pos2::after{
+    height: 1000px;
+  }
+  .welcomeImgBG{
+      width: 440px;
+      height: 680px;
+     }
+   .welcomeImg{
+      width: 400px;
+      height: 534px;
+  }
+  .welcomeRight{
+      margin-left: 260px;
+  }
+  .welcomeRight .JulianBristol {
+      margin-top: 50px;
+      margin-bottom: 25px;
+      margin-left: -150px;
+      font-size: 6rem;
+  }
+  #welcome .paragraphContainer{
+    width: 580px;
+  }
+  #welcome .julian_description{
+    width: 1360px;
+  }
+  #welcome .julian_description.desc1{
+    left: -140px;
+    height: 260px;
+  }
+  .welcomeRight p {
+      width: 580px;
+      font-size: 2rem;
+  }
+  #welcome .toggleTextBtn.textLeft{
+    left: 430px;
+  }
+  .welcomeRight .btnLinks{
+    margin-left: 0px;
+    left: -110px;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media screen and (max-width: 950px) {
+    .backgroundBlur {
+        width: 750px;
+    }
+    .welcomeMessage::before{
+      width: 651px;
+    }
+    /* .welcomeMessage.pos1::before{
+      height: 830px;
+    }
+    .welcomeMessage.pos2::before{
+      height: 1010px;
+    } */
+    .welcomeMessage{
+        width: 580px;
+    }
+    /* .welcomeMessage.pos1{
+        height: 800px;
+    }
+    .welcomeMessage.pos2{
+        height: 980px;
+    } */
+    .welcomeMessage::after{
+      width: 640px;
+    }/* 
+    .welcomeMessage.pos1::after{
+      height: 820px;
+    }
+    .welcomeMessage.pos2::after{
+      height: 1000px;
+    } */
+    .welcomeImgBG{
+        width: 420px;
+        height: 480px;
+        top: 30px;
+       }
+     /* .welcomeImg{
+        width: 400px;
+        height: 534px;
+    } 
+    .welcomeRight{
+        margin-left: 260px;
+    }*/
+    .welcomeRight .JulianBristol {
+      width: 580px;
+
+
+
+
+        margin-top: 50px;
+        margin-bottom: 25px;
+        margin-left: -150px;
+        font-size: 6rem;
+    }
+    #welcome .paragraphContainer{
+      width: 580px;
+    }
+    #welcome .julian_description{
+      width: 1360px;
+    }
+    #welcome .julian_description.desc1{
+      left: -140px;
+      height: 260px;
+    }
+    .welcomeRight p {
+        width: 580px;
+        font-size: 2rem;
+    }
+    #welcome .toggleTextBtn.textLeft{
+      left: 430px;
+    }
+    .welcomeRight .btnLinks{
+      margin-left: 0px;
+      left: -110px;
+    }
     }
