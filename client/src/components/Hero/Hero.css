@@ -20,7 +20,6 @@
   display: block;
   position: absolute;
   z-index: -1;
-  height: 730px;
   width: 1202px;
   margin-top: -14.5px;
   margin-left: -34.5px;
@@ -38,26 +37,45 @@
   background:-ms-linear-gradient(180deg, #ECEA33 0%, #7B1D2B00 15%, #7B1D2B00 85%, #8C1627 100%);
   /* global 94%+ browsers support */
   background:linear-gradient(180deg, #ECEA33 0%, #7B1D2B00 15%, #7B1D2B00 85%, #8C1627 100%);
+  transition: all 0.5s ease-in-out;
+}
+.welcomeMessage.pos1::before{
+  height: 830px;
+}
+.welcomeMessage.pos2::before{
+  height: 1010px;
 }
 .welcomeMessage{
-    height: 700px;
     width: 1132px;
     background: linear-gradient(185deg, #010000, #160508);
     border-radius: 5px;
     padding: 10px 30px;
+    transition: all 0.5s ease-in-out;
+}
+.welcomeMessage.pos1{
+    height: 800px;
+}
+.welcomeMessage.pos2{
+    height: 980px;
 }
 .welcomeMessage::after{
   content: '';
   display: block;
   position: absolute;
   z-index: -41;
-  height: 720px;
   width: 1192px;
   margin-top: -10px;
   margin-left: -30px;
   border-radius: 5px;
   box-shadow: 0px 0px 15px 5px #bfbd5f5c;
   background: transparent;
+  transition: all 0.5s ease-in-out;
+}
+.welcomeMessage.pos1::after{
+  height: 820px;
+}
+.welcomeMessage.pos2::after{
+  height: 1000px;
 }
 .welcomeContent{
   top: 30px;
@@ -131,6 +149,25 @@
     font-weight: 100;
     font-family: Lobster;
 }
+#welcome .paragraphContainer{
+  width: 800px;
+  overflow: hidden;
+}
+#welcome .julian_description{
+  display: grid;
+  grid-template-columns: 50% 50%;	
+  width: 1500px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+#welcome .julian_description.desc1{
+  left: -80px;
+  height: 260px;
+}
+#welcome .julian_description.desc2{
+  left: -820px;
+  height: 565px;
+}
 .welcomeRight .emph1 {
     font-size: 10rem;
     line-height: 0px;
@@ -140,12 +177,40 @@
     width: 640px;
     font-size: 2.5rem;
 }
-.welcomeRight .btnLinks{
-    margin-left: 100px;
-    display: flex;
-    justify-content: space-evenly;
+#welcome .julian_description .secondaryDesc p{
+  font-size: 1.53rem;	
 }
-
+#welcome .toggleTextBtn{
+  background-color: transparent;
+  border: 0px solid transparent;
+  top: 0px;
+  position: relative;
+  color: var(--yellow-neon);
+  text-shadow: 0px 0px 8px #bfbe5fab;
+  font-family: Lobster;
+  font-size: 5rem;
+  transition: all 0.5s ease-in-out;
+}
+#welcome .toggleTextBtn.textLeft{
+  left: 600px;
+}
+#welcome .toggleTextBtn.textRight{
+  left: -250px;
+  top: -150px;
+}
+.welcomeRight .btnLinks{
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  margin-left: 100px;
+  transition: all 0.5s ease-in-out;
+}
+.welcomeRight .btnLinks.btnPos1{
+  top: 40px;
+}
+.welcomeRight .btnLinks.btnPos2{
+  top: -80px;
+}
 @-webkit-keyframes wobbling {
   0% {
       margin-top: -10%;
