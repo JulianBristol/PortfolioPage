@@ -49,7 +49,7 @@
   height: 1010px;
 }
 .welcomeMessage{
-  display: flex;
+  display: grid;
     width: 1132px;
     background: linear-gradient(185deg, #010000, #160508);
     border-radius: 5px;

@@ -81,15 +81,21 @@ const BackgroundShapes = () => {
   };
 
   let count = 0;
-  useEffect(() => {
-
-  }, [document.body.addEventListener('mousemove', (e) => {
+  const handleMouseMove = (e) => {
     if (count % 20 === 0) {
       moveComponents(e);
+      count = 0;
     }
     /* eslint-disable no-plusplus */
     count++;
-  })]);
+  };
+
+  useEffect(() => {
+    document.body.addEventListener('mousemove', handleMouseMove);
+    return () => {
+      document.body.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
 
   return (
     <div id='shapesContainer' style={{ translate: '0 0px' }}>

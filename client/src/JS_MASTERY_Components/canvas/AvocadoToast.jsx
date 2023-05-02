@@ -10,7 +10,7 @@ const AvocadoToast = () => {
   //Create a new pivot point
   const pivot = new Object3D();
   pivot.position.set(0, 0, -6);
-  pivot.add(toast.scene)
+  pivot.add(toast.scene);
 
   return (
     <mesh>
@@ -37,7 +37,9 @@ const AvocadoToastCanvas = () => {
       frameloop='demand'
       shadows
       camera={{ position: [20, 3, 4], fov: 45 }}
-      gl={{ preserveDrawingBuffer: true }}
+      gl={{ 
+        preserveDrawingBuffer: true,
+     }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls

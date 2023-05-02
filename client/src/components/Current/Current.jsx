@@ -20,7 +20,7 @@ const Current = () => (
                   <div className='rotateHint'>
                     <motion.div
                       animate={{
-                        x: [0, 24, 0]
+                        x: [0, 24, 0],
                       }}
                       transition={{
                         duration: 1.5,

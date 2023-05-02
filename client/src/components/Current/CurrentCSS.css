@@ -6,8 +6,11 @@
     margin: auto 250px;
     position: relative;
     pointer-events: none;
-    z-index: 10;
+    z-index: 1;
     user-select: none;
+}
+#current *{
+    transition: all 0.5s ease-in-out;
 }
 #current .sectionTitle{
     font-size: 6rem;
@@ -17,7 +20,8 @@
     text-shadow: 0px 0px 8px #bfbd5f76;
 }
 #current .columns{
-    display: flex
+    display: flex;
+    margin-left: 0;
     /* grid-template-columns: 50% 50%; */
 }
 #current .currentStudies{
@@ -66,6 +70,7 @@
     align-self: center;
     justify-self: center;
     margin-top: -2.5px;
+    transition: all 0s ease-in-out !important;
 }
 #current .motionArrow svg{
     fill: #f1f1f1;
