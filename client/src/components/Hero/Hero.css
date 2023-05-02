@@ -208,7 +208,7 @@
   transition: all 0.5s ease-in-out;
 }
 #welcome .toggleTextBtn.textLeft{
-  left: 600px;
+  left: 550px;
 }
 #welcome .toggleTextBtn.textRight{
   left: -250px;
@@ -339,7 +339,7 @@
       font-size: 2rem;
   }
   #welcome .toggleTextBtn.textLeft{
-    left: 430px;
+    left: 380px;
   }
   #welcome .btnLinks{
     margin-left: 280px;
@@ -410,7 +410,7 @@
     }
     #welcome .toggleTextBtn.textLeft{
       top: -90px;
-      left: 180px;
+      left: 130px;
     }
     #welcome .toggleTextBtn.textRight{
       top: -40px;
@@ -548,7 +548,7 @@
     }
     #welcome .toggleTextBtn.textLeft{
       top: -25px;
-      left: -40px;
+      left: -90px;
     }
     #welcome .toggleTextBtn.textRight{
       top: -25px;

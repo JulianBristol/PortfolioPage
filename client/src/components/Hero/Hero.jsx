@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 import React, { useEffect, useState } from 'react';
 import Julian from '../../images/Good Enough.png';
+import resume from '../../assets/Resume.pdf';
 import './Hero.css';
-import { ComputersCanvas } from '../../JS_MASTERY_Components';
 
 const Hero = () => {
   const [toggleText, setToggleText] = useState(true);
@@ -46,20 +46,24 @@ const Hero = () => {
                                 <button className={`toggleTextBtn ${toggleText ? 'textLeft' : 'textRight'}`} onClick={() => {
                                   setToggleText(!toggleText);
                                 }
-                                }>{toggleText ? 'Next' : 'Back'}</button>
+                                }>{toggleText ? 'About' : 'Back'}</button>
                             </div>
                         </div>
 
                     </div>
                             <div className={`btnLinks ${toggleText ? 'btnPos1' : 'btnPos2'}`}>
-                                <button>Resume()</button>
-                                <button>LinkedIn</button>
-                                <button>GitHub</button>
+                                <a href={resume} target='_blank' rel='noreferrer'>
+                                <button>Resume()</button></a>
+                                <button onClick={() => {
+                                  window.open('https://www.linkedin.com/in/julianbristol/', '_blank');
+                                }}>LinkedIn</button>
+                                <button onClick={() => {
+                                  window.open('https://github.com/JulianBristol', '_blank');
+                                }}>GitHub</button>
                             </div>
                 </div>
             </div>
         </div>
-        <ComputersCanvas />
     </div>
   ); };
 
