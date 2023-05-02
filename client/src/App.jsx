@@ -1,10 +1,11 @@
 /* eslint-disable */
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { About, Contact, Experience, Feedbacks, Tech, Works, StarsCanvas } from './JS_MASTERY_Components';
+import { Contact, Experience, Feedbacks, Tech, Works, StarsCanvas } from './JS_MASTERY_Components';
 import Hero from './components/Hero/Hero.jsx';
 import Header from './header/Header.jsx';
 import BackgroundShapes from './components/Background/BackgroundShapes.jsx';
+import Current from './components/Current/Current';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <div className='spacer'/>
           <Hero />
           <div className='spacer'/>
-          <About />
+          <Current />
           <Experience />
           <Tech />
           <Works />

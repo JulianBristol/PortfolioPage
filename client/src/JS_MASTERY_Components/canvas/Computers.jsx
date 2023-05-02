@@ -44,44 +44,4 @@ const ComputersCanvas = () => {
 }
 
 
-const AvocadoToast = () => {
-  const toast = useGLTF('./avocadoToast/scene.gltf');
-  //Create a new pivot point
-  const pivot = new Object3D();
-  pivot.position.set(0, 0, -6);
-  pivot.add(toast.scene)
-
-  return (
-    <mesh>
-      <hemisphereLight intensity={0.15}
-      groundColor='black' />
-      <pointLight intensity={1} />
-      <group position={[0, 0.25, -1.25]}>
-      <primitive object={pivot} scale={6.75} />
-    </group>
-    </mesh>
-  )
-}
-const AvocadoToastCanvas = () => {
-  return (
-    <Canvas
-      frameloop='demand'
-      shadows
-      camera={{ position: [20, 3, 4], fov: 25, }}
-      gl={{ preserveDrawingBuffer: true }}
-      style={{ outline: '1px dashed red', height: '300px'}}
-    >
-      <Suspense /* fallback={<CanvasLoader />} */>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 3.5}
-          minPolarAngle={Math.PI / 3.5}
-        />
-        <AvocadoToast />
-      </Suspense>
-      <Preload all />
-    </Canvas>
-  )
-}
-
-export default AvocadoToastCanvas
+export default ComputersCanvas
