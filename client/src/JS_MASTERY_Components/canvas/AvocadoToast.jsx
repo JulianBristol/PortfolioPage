@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import CanvasLoader from '../Loader';
 import { Object3D } from 'three';
 
-const AvocadoToast = () => {
+const AvocadoToast = ({isMobile}) => {
   const toast = useGLTF('./avocadoToast/scene.gltf');
   //Create a new pivot point
   const pivot = new Object3D();
@@ -25,13 +25,36 @@ const AvocadoToast = () => {
       castShadow
       shadow-mapSize={1024}
       /> */}
-      <group position={[0, 0.25, -1.25]}>
-      <primitive object={pivot} scale={6.75} />
+      <group position={isMobile ? [0, 0.25, 0.55] : [0, 0.25, -1.25]}>
+      <primitive object={pivot} scale={isMobile ? 5 : 6.75} />
     </group>
     </mesh>
   )
 }
 const AvocadoToastCanvas = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        /* Add event listener for changes to screen width */
+        const mediaQuery = window.matchMedia('(max-width: 600px)');
+
+        /* Set initial value for 'isMobile' */
+        setIsMobile(mediaQuery.matches);
+
+        /* Define a callback function to handle changes to the media query */
+        const handleMediaQueryChange = (event) => {
+            setIsMobile(event.matches);
+        }
+
+        /* Add the callback function as a listener for media query changes */
+        mediaQuery.addEventListener('change', handleMediaQueryChange);
+
+        /* Remove Event listener when component is unmounted */
+        return () => {
+            mediaQuery.removeEventListener('change', handleMediaQueryChange);
+        }
+    },[])
+
   return (
     <Canvas
       frameloop='demand'
@@ -47,7 +70,7 @@ const AvocadoToastCanvas = () => {
           maxPolarAngle={Math.PI / 3.5}
           minPolarAngle={Math.PI / 3.5}
         />
-        <AvocadoToast />
+        <AvocadoToast isMobile={isMobile} />
       </Suspense>
       <Preload all />
     </Canvas>
