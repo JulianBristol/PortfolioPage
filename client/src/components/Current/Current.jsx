@@ -10,6 +10,7 @@ const Current = () => (
         <div className='columns'>
             <div className='currentStudies'>
                 <p>I&apos;m on a mission to master <span>threeJS</span> and <span>machine learning</span>.</p>
+                <br/>
                 {/* eslint-disable-next-line max-len */}
                 <p>If you&apos;re in need of a talented and enthusiastic developer who&apos;s fueled by a slightly unhealthy amount of avocado toast, then look no further!</p>
             </div>

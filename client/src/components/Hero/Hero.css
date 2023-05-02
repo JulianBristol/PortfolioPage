@@ -55,6 +55,7 @@
     border-radius: 5px;
     padding: 10px 30px;
     transition: all 0.5s ease-in-out;
+    margin-bottom: 0px;
 }
 .welcomeMessage.pos1{
     height: 800px;
@@ -361,6 +362,7 @@
     }
     .welcomeMessage{
         width: 580px;
+        margin-bottom: -200px;
     }
     .welcomeMessage.pos1{
         height: 950px;

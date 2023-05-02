@@ -1,31 +1,41 @@
 #currentBG{
     margin-top: 100px;
     background-color: var(--bg);
+    display: grid;
+    height: 100%;
 }
 #current{
-    margin: auto 250px;
+    justify-self: center;
     position: relative;
     pointer-events: none;
-    z-index: 1;
     user-select: none;
+    z-index: 1;
 }
 #current *{
     transition: all 0.5s ease-in-out;
 }
 #current .sectionTitle{
     font-size: 6rem;
+    width: 100%;
     font-family: Lobster;
     margin-bottom: 50px;
     color: var(--yellow-neon);
     text-shadow: 0px 0px 8px #bfbd5f76;
+    justify-self: center;
+    display: grid;
+    
+    left: 0%;
+    position: relative;
+    margin-left: 0px;
 }
 #current .columns{
-    display: flex;
-    margin-left: 0;
-    /* grid-template-columns: 50% 50%; */
+    display: grid;
 }
 #current .currentStudies{
     width: 500px;
+    left: 0%;
+    position: relative;
+    margin-left: 0px;
 }
 #current p{
     font-size: 2rem;
@@ -42,13 +52,13 @@
     height: 800px;
     width: 900px;
     margin-top: -300px;
-    margin-left: 430px;
+    left: 420px;
     z-index: -1;
     /* outline: 1px dashed red; */
 }
 #current .rotateHintContainer{
     position: absolute;
-    bottom: 32px;
+    bottom: 100px;
     width: 100%;
     display: grid;
     justify-self: center;
@@ -75,4 +85,501 @@
 #current .motionArrow svg{
     fill: #f1f1f1;
     height: 40px;
+}
+
+
+
+
+
+
+
+/* Responsiveness */
+@media screen and (max-width: 1280px){
+    #currentBG{
+        height: 600px;
+    }
+/* 
+    #current{
+        margin: auto 250px;
+        position: relative;
+        pointer-events: none;
+        z-index: 1;
+        user-select: none;
+    }
+    #current *{
+        transition: all 0.5s ease-in-out;
+    }
+    */
+    #current .sectionTitle{
+        font-size: 4rem;
+
+
+
+    
+        width: 100%;
+        left: 50%;
+        position: relative;
+        margin-left: -50%;
+    }
+    /* #current .columns{
+        display: flex;
+        margin-left: 0;
+    }*/
+    #current .currentStudies{
+        width: 640px;
+        text-align: center;
+    }
+    /*
+    #current p{
+        font-size: 2rem;
+        font-family: Gelasio;
+        color: var(--red-neon);
+        text-shadow: 0px 0px 4px #8c16278c;
+    } */
+    /*
+    #current p span{
+        color: var(--yellow-neon);
+        text-shadow: 0px 0px 4px #bfbd5f76;
+    }*/
+    #current .avocadoToastContainer{
+        left: 20%;
+        margin-top: 0px;
+    }
+    /*
+    #current .rotateHintContainer{
+        position: absolute;
+        bottom: 32px;
+        width: 100%;
+        display: grid;
+        justify-self: center;
+        justify-items: center;
+    }
+    #current .rotateHint{
+        width: 64px;
+        height: 35px;
+        border-radius: 15px;
+        border: 4px solid #F1F1F1;
+        display: grid;
+        justify-content: center;
+        justify-items: start;
+        padding: 2px;
+    }
+    #current .motionArrow{
+        width: 64px;
+        color: #f1f1f1;
+        align-self: center;
+        justify-self: center;
+        margin-top: -2.5px;
+        transition: all 0s ease-in-out !important;
+    }
+    #current .motionArrow svg{
+        fill: #f1f1f1;
+        height: 40px;
+    }
+     */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1020px){
+    
+    #currentBG{
+        height: 600px;
+    }
+/* 
+    #current{
+        margin: auto 250px;
+        position: relative;
+        pointer-events: none;
+        z-index: 1;
+        user-select: none;
+    }
+    #current *{
+        transition: all 0.5s ease-in-out;
+    }
+    */
+    #current .sectionTitle{
+        font-size: 4rem;
+        font-family: Lobster;
+        margin-bottom: 50px;
+        color: var(--yellow-neon);
+        text-shadow: 0px 0px 8px #bfbd5f76;
+    }
+    #current .columns{
+        /* display: block; */
+    }
+    #current .currentStudies{
+        /* width: 75%; */
+    }
+    /*
+    #current p{
+        font-size: 2rem;
+        font-family: Gelasio;
+        color: var(--red-neon);
+        text-shadow: 0px 0px 4px #8c16278c;
+    } */
+    /*
+    #current p span{
+        color: var(--yellow-neon);
+        text-shadow: 0px 0px 4px #bfbd5f76;
+    }*/
+    #current .avocadoToastContainer{
+        margin-top: 50px;
+        margin-left: -450px;
+        left: 50%;
+        
+    }
+    /*
+    #current .rotateHintContainer{
+        position: absolute;
+        bottom: 32px;
+        width: 100%;
+        display: grid;
+        justify-self: center;
+        justify-items: center;
+    }
+    #current .rotateHint{
+        width: 64px;
+        height: 35px;
+        border-radius: 15px;
+        border: 4px solid #F1F1F1;
+        display: grid;
+        justify-content: center;
+        justify-items: start;
+        padding: 2px;
+    }
+    #current .motionArrow{
+        width: 64px;
+        color: #f1f1f1;
+        align-self: center;
+        justify-self: center;
+        margin-top: -2.5px;
+        transition: all 0s ease-in-out !important;
+    }
+    #current .motionArrow svg{
+        fill: #f1f1f1;
+        height: 40px;
+    }
+     */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* 
+        #currentBG{
+            margin-top: 100px;
+            background-color: red;
+        }
+        #current{
+            margin: auto 250px;
+            position: relative;
+            pointer-events: none;
+            z-index: 1;
+            user-select: none;
+        }
+        #current *{
+            transition: all 0.5s ease-in-out;
+        }
+        #current .sectionTitle{
+            font-size: 6rem;
+            font-family: Lobster;
+            margin-bottom: 50px;
+            color: var(--yellow-neon);
+            text-shadow: 0px 0px 8px #bfbd5f76;
+        }
+        #current .columns{
+            display: flex;
+            margin-left: 0;
+        }
+        #current .currentStudies{
+            width: 500px;
+        }
+        #current p{
+            font-size: 2rem;
+            font-family: Gelasio;
+            color: var(--red-neon);
+            text-shadow: 0px 0px 4px #8c16278c;
+        }
+        #current p span{
+            color: var(--yellow-neon);
+            text-shadow: 0px 0px 4px #bfbd5f76;
+        }
+        #current .avocadoToastContainer{
+            position: absolute;
+            height: 800px;
+            width: 900px;
+            margin-top: -300px;
+            margin-left: 430px;
+            z-index: -1;
+        }
+        #current .rotateHintContainer{
+            position: absolute;
+            bottom: 32px;
+            width: 100%;
+            display: grid;
+            justify-self: center;
+            justify-items: center;
+        }
+        #current .rotateHint{
+            width: 64px;
+            height: 35px;
+            border-radius: 15px;
+            border: 4px solid #F1F1F1;
+            display: grid;
+            justify-content: center;
+            justify-items: start;
+            padding: 2px;
+        }
+        #current .motionArrow{
+            width: 64px;
+            color: #f1f1f1;
+            align-self: center;
+            justify-self: center;
+            margin-top: -2.5px;
+            transition: all 0s ease-in-out !important;
+        }
+        #current .motionArrow svg{
+            fill: #f1f1f1;
+            height: 40px;
+        }
+         */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+@media screen and (max-width: 656px){
+    
+    #currentBG{
+        height: 800px;
+    }
+/* 
+    #current{
+        margin: auto 250px;
+        position: relative;
+        pointer-events: none;
+        z-index: 1;
+        user-select: none;
+    }
+    #current *{
+        transition: all 0.5s ease-in-out;
+    }
+    */
+    #current .sectionTitle{
+        width: 350px;
+        height: 80px;
+        left: 50%;
+        position: relative;
+        margin-left: -175px;
+    }
+    /* #current .columns{
+        display: flex;
+        margin-left: 0;
+    }*/
+    #current .currentStudies{
+        width: 100%;
+    }
+    /*
+    #current p{
+        font-size: 2rem;
+        font-family: Gelasio;
+        color: var(--red-neon);
+        text-shadow: 0px 0px 4px #8c16278c;
+    } */
+    /*
+    #current p span{
+        color: var(--yellow-neon);
+        text-shadow: 0px 0px 4px #bfbd5f76;
+    }*/
+    #current .avocadoToastContainer{
+        margin-top: 50px;
+        margin-left: -450px;
+        left: 50%;
+        
+    }
+    /*
+    #current .rotateHintContainer{
+        position: absolute;
+        bottom: 32px;
+        width: 100%;
+        display: grid;
+        justify-self: center;
+        justify-items: center;
+    }
+    #current .rotateHint{
+        width: 64px;
+        height: 35px;
+        border-radius: 15px;
+        border: 4px solid #F1F1F1;
+        display: grid;
+        justify-content: center;
+        justify-items: start;
+        padding: 2px;
+    }
+    #current .motionArrow{
+        width: 64px;
+        color: #f1f1f1;
+        align-self: center;
+        justify-self: center;
+        margin-top: -2.5px;
+        transition: all 0s ease-in-out !important;
+    }
+    #current .motionArrow svg{
+        fill: #f1f1f1;
+        height: 40px;
+    }
+     */
+}
+
+
+
+@media screen and (max-width: 700px){
+    
+    #currentBG{
+        height: 800px;
+    }
+/* 
+    #current{
+        margin: auto 250px;
+        position: relative;
+        pointer-events: none;
+        z-index: 1;
+        user-select: none;
+    }
+    #current *{
+        transition: all 0.5s ease-in-out;
+    }
+    */
+    #current .sectionTitle{
+        width: 350px;
+        height: 160px;
+        left: 50%;
+        position: relative;
+        margin-left: -175px;
+    }
+    /* #current .columns{
+        display: flex;
+        margin-left: 0;
+    }*/
+    #current .currentStudies{
+        /* width: 75%; */
+    }
+    /*
+    #current p{
+        font-size: 2rem;
+        font-family: Gelasio;
+        color: var(--red-neon);
+        text-shadow: 0px 0px 4px #8c16278c;
+    } */
+    /*
+    #current p span{
+        color: var(--yellow-neon);
+        text-shadow: 0px 0px 4px #bfbd5f76;
+    }*/
+    #current .avocadoToastContainer{
+        margin-top: 100px;
+        margin-left: -450px;
+        left: 50%;
+        
+    }
+    /*
+    #current .rotateHintContainer{
+        position: absolute;
+        bottom: 32px;
+        width: 100%;
+        display: grid;
+        justify-self: center;
+        justify-items: center;
+    }
+    #current .rotateHint{
+        width: 64px;
+        height: 35px;
+        border-radius: 15px;
+        border: 4px solid #F1F1F1;
+        display: grid;
+        justify-content: center;
+        justify-items: start;
+        padding: 2px;
+    }
+    #current .motionArrow{
+        width: 64px;
+        color: #f1f1f1;
+        align-self: center;
+        justify-self: center;
+        margin-top: -2.5px;
+        transition: all 0s ease-in-out !important;
+    }
+    #current .motionArrow svg{
+        fill: #f1f1f1;
+        height: 40px;
+    }
+     */
 }
