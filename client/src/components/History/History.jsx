@@ -15,19 +15,30 @@ const History = () => {
     date={experience.date}
     iconStyle={{ background: experience.iconBG }}
     icon={
-        <div className='experienceIcon'>
+        <div className='xpIcon'>
             <img
             src={experience.icon}
             alt={experience.companyName}
-            className='experienceCardIcon'
+            className='xpIconIMG'
             />
         </div>
     }
     >
         <div>
-            <h3 className='experienceCardTitle'>
+            <h3 className='xpCardTitle'>
                 {experience.title}
             </h3>
+            <p className='xpCardName'>{experience.companyName}</p>
+            <ul className='xpListContainer'>
+                {experience.points.map((point, key) => (
+                    <li
+                    key={`experience_point_${key}`}
+                    className='XPListElem'
+                    >
+                        {point}
+                    </li>
+                ))}
+            </ul>
         </div>
     </VerticalTimelineElement>
   );

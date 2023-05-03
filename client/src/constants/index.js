@@ -16,15 +16,15 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  capella,
+  lykka,
   carrent,
   jobit,
   tripguide,
   threejs,
 } from '../assets';
+
+import logo from '../assets/company/logo.svg';
 
 export const navLinks = [
   {
@@ -125,12 +125,24 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
-    iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    title: 'Computer Science Student',
+    companyName: 'Capella University',
+    icon: capella,
+    date: 'Jan 2020 - Sept 2022',
     points: [
+      'Learn and use languages and software to build in React.js, JavaScript, HTML, CSS, Java, SQL, and MongoDB',
+      'Collaborating with students in teams composed of designers, project managers, and other developers to create graded school projects.',
+      'Implement Agile methodologies, namely Scrum.',
+      'Participating in learning activities directed to learn from and teach others.',
+    ],
+  },
+  {
+    title: 'Front-End Developer Intern',
+    companyName: 'Lykka Village',
+    icon: lykka,
+    date: 'July 2022 - Feb 2023',
+    points: [
+      'Design components and webpages using UI/UX best practices.',
       'Developing and maintaining web applications using React.js and other related technologies.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
@@ -138,42 +150,14 @@ const experiences = [
     ],
   },
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    title: 'UI/UX Contractor and Front-End Developer',
+    companyName: 'Consultancy',
+    icon: logo,
+    date: 'Feb 2023 - Present',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
-    iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Collaborate with stakeholders and other developers to create flexible designs and create custom web solutions',
+      'Develop responsive and user-friendly websites using HTML, CSS, JavaScript, and other web technologies',
+      'Design visually appealing and engaging user interfaces',
     ],
   },
 ];
