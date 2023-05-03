@@ -24,11 +24,13 @@
   color-scheme: dark;
     --red-main: #8C1627;
     --red-neon: #CC112C;
-    --yellow-main: #BFBE5F;
+    --yellow-dull: #BFBE5F;
+    --yellow-main: #FFD486;
     --yellow-neon: #ECEA33;
     --dark-main: #0E0904;
     --dark-accent: #090203;
     --header-bg: #0e0904;
+    --component-bg: #121212;
     --bg: #070707;
 }
 body {
@@ -39,6 +41,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg);
 }
 
 code {
@@ -69,18 +72,15 @@ button:hover {
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: #070707;
-  height: 2000px
+  height: 2000px;
 }
 .pageContent {
   position: absolute;
   width: 100%;
   left: 50%;
   margin-left: -50%;
-  /* top: 92px; 
-  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
-  background: transparent;
-  backdrop-filter: blur(3px);
-  width: 100%;*/
+  /* background-color: var(--bg);
+  z-index: -0; */
 }
 #headerBorder{
   height: 3px;
@@ -102,7 +102,12 @@ button:hover {
 .spacer{
   height: 10vh;
 }
-
+.sectionTitle{
+  font-size: 6rem;
+  font-family: Lobster;
+  color: var(--yellow-neon);
+  text-shadow: 0px 0px 8px #bfbd5f76;
+}
 
 
 
@@ -306,12 +311,27 @@ button:hover {
 } */
 
 /* Responsiveness */
-/* Small Screens - 600px */
-@media screen and (max-width: 600px){
-  .hide_sm{
+/* Extra Large Screens - 1536px */
+@media screen and (max-width: 1536px){
+  .hide_xl{
     display: none !important;
   }
-  .show_sm {
+  .show_xl {
+    display: block;
+  }
+
+@media screen and (max-width: 1280px){
+  .sectionTitle{
+      font-size: 4rem;
+  }
+}
+
+/* Large Screens - 1200px */
+@media screen and (max-width: 1200px){
+  .hide_lg{
+    display: none !important;
+  }
+  .show_lg {
     display: block;
   }
 }
@@ -326,22 +346,14 @@ button:hover {
   }
 }
 
-/* Large Screens - 1200px */
-@media screen and (max-width: 1200px){
-  .hide_lg{
+/* Small Screens - 600px */
+@media screen and (max-width: 600px){
+  .hide_sm{
     display: none !important;
   }
-  .show_lg {
+  .show_sm {
     display: block;
   }
 }
 
-/* Extra Large Screens - 1536px */
-@media screen and (max-width: 1536px){
-  .hide_xl{
-    display: none !important;
-  }
-  .show_xl {
-    display: block;
-  }
 }

@@ -138,7 +138,7 @@
 }
 .text {
     mix-blend-mode: difference;
-    color: rgb(255, 212, 134);
+    color: var(--yellow-main);
     font-family: Gelasio;
 }
 
