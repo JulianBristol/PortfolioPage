@@ -28,9 +28,9 @@ import {
 
 export const navLinks = [
   {
-    id: 'about',
-    fLetter: 'a',
-    title: 'BOUT',
+    id: 'history',
+    fLetter: 'h',
+    title: 'ISTORY',
   },
   {
     id: 'portfolio',
