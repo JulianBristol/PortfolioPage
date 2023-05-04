@@ -7,7 +7,7 @@ import Header from './header/Header.jsx';
 import BackgroundShapes from './components/Background/BackgroundShapes.jsx';
 import Current from './components/Current/Current';
 import History from './components/History/History';
-import Tech from './components/Tech';
+import Tech from './components/Tech/Tech';
 
 function App() {
   return (
