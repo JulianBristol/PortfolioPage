@@ -20,6 +20,7 @@ import {
 } from '../assets';
 
 import logo from '../assets/company/logo.svg';
+import java from '../assets/tech/java.png';
 
 export const navLinks = [
   {
@@ -86,6 +87,10 @@ const technologies = [
     icon: threejs,
   },
   {
+    name: 'Java',
+    icon: java,
+  },
+  {
     name: 'git',
     icon: git,
   },
@@ -134,33 +139,6 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-        'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
-  },
-  {
-    testimonial:
-        'I\'ve never met a web developer who truly cares about their clients\' success like Rick does.',
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  },
-  {
-    testimonial:
-        'After Rick optimized our website, our traffic increased by 50%. We can\'t thank them enough!',
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
-  },
-];
-
 const projects = [
   {
     name: 'Car Rent',
@@ -169,19 +147,20 @@ const projects = [
     tags: [
       {
         name: 'react',
-        color: 'blue-text-gradient',
+        color: '#00d9ff',
       },
       {
         name: 'mongodb',
-        color: 'green-text-gradient',
+        color: '#7dc353',
       },
       {
         name: 'tailwind',
-        color: 'pink-text-gradient',
+        color: '#0ea5e9',
       },
     ],
     image: carrent,
-    source_code_link: 'https://github.com/',
+    sourceCodeLink: '',
+    activeLink: '',
   },
   {
     name: 'Job IT',
@@ -190,19 +169,20 @@ const projects = [
     tags: [
       {
         name: 'react',
-        color: 'blue-text-gradient',
+        color: '#00d9ff',
       },
       {
         name: 'restapi',
-        color: 'green-text-gradient',
+        color: '#FFFFFF',
       },
       {
         name: 'scss',
-        color: 'pink-text-gradient',
+        color: '#FFFFFF',
       },
     ],
     image: jobit,
-    source_code_link: 'https://github.com/',
+    sourceCodeLink: 'https://github.com/',
+    activeLink: 'https://google.com/',
   },
   {
     name: 'Trip Guide',
@@ -211,20 +191,21 @@ const projects = [
     tags: [
       {
         name: 'nextjs',
-        color: 'blue-text-gradient',
+        color: '#FFFFFF',
       },
       {
         name: 'supabase',
-        color: 'green-text-gradient',
+        color: '#FFFFFF',
       },
       {
         name: 'css',
-        color: 'pink-text-gradient',
+        color: '#FFFFFF',
       },
     ],
     image: tripguide,
-    source_code_link: 'https://github.com/',
+    sourceCodeLink: 'https://github.com/',
+    activeLink: 'https://google.com/',
   },
 ];
 
-export { technologies, experiences, testimonials, projects };
+export { technologies, experiences, projects };

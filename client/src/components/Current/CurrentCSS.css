@@ -8,7 +8,7 @@
     backdrop-filter: blur(5px);
     border: 1px solid rgba(18,18,18,0.4);
     display: grid;
-    height: 100%;
+    height: 550px;
     justify-content: center;
     margin-bottom: 50px;
     transition: all 0.5s ease-in-out;
@@ -19,6 +19,7 @@
     user-select: none;
     z-index: 1;
     margin-top: 50px;
+    padding: 0px 50px;
 }
 #currentDiv *{
     transition: all 0.5s ease-in-out;
@@ -27,7 +28,6 @@
     margin-bottom: 50px;
     justify-self: center;
     display: grid;
-    text-align: center;
     position: relative;
 }
 #currentDiv .columns{
@@ -94,8 +94,8 @@
         height: 600px;
     }
     #currentDiv .currentStudies{
-        width: 640px;
-        text-align: center;
+        /* width: 640px; */
+        /* text-align: center; */
     }
     #currentDiv .avocadoToastContainer{
         left: 20%;
@@ -149,6 +149,6 @@
 
 @media screen and (max-width: 600px){
     #currentBG{
-        height: 600px;
+        height: 650px;
     }
 }

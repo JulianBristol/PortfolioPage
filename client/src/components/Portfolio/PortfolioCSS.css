@@ -1,0 +1,129 @@
+
+#motionDiv-portfolio{
+    display: grid;
+    justify-items: center;
+}
+#portfolio{
+    margin-bottom: 100px;
+    display: block;
+}
+#motionDiv-portfolio .sectionTitle{
+    display: flex;
+    justify-content: center;
+}
+.sectionDesc{
+    font-size: 2rem;
+    margin-top: 30px;
+    padding: 0px 50px;
+    font-family: Gelasio;
+    color: var(--red-neon);
+    text-shadow: 0px 0px 4px #8c16278c;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+}
+.projectCardGroup{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+    gap: 45px;
+    justify-content: center;
+}
+.tiltComponent{
+    background: var(--red-main);
+    border-radius: 10px;
+    width: 360px;
+    box-shadow: 0px 0px 5px var(--red-neon);
+    padding: 15px;
+}
+.tiltComponent:hover .gitOverlay, .tiltComponent:hover .activeOverlay{
+    opacity: 1;
+}
+.card{
+    background: var(--red-neon);
+    border-radius: 10px;
+    background: linear-gradient(185deg, #010000, #2a0a10);
+    min-height: 535px;
+}
+.cardImgContainer{
+    height: 236px;
+    width: 100%;
+    position: relative;
+}
+.cardImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.gitOverlay{
+    position: absolute;
+    display: flex;
+    justify-items: end;
+    margin: 15px;
+    background-color: black;
+    border-radius: 50%;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+}
+.activeOverlay{
+    position: absolute;
+    display: flex;
+    justify-items: end;
+    margin: 15px;
+    background-color: black;
+    border-radius: 50%;
+    top: 50px;
+    right: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+}
+.gitHubIcon{
+    height: 30px;
+    width: 30px;
+}
+.webIcon{
+    height: 30px;
+    width: 30px;
+}
+.cardText{
+    margin: 30px 20px 0;
+    font-family: Gelasio;
+    color: var(--yellow-main);
+}
+.cardText h3{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 0px 0px 3px #bfbd5f76;
+}
+.cardText p{
+    padding-bottom: 20px;
+    font-size: 1.3rem;
+}
+.skillTags{
+    position: absolute;
+    display: flex;
+    margin: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+    bottom: 10px;
+    font-family: Gelasio;
+}
+
+/* Responsiveness */
+/* @media screen and (max-width: 1280px){
+    #motionDiv-portfolio .sectionTitle{
+        width: auto;
+    }
+} */
+
+@media screen and (max-width: 550px){
+    .projectCardGroup{
+        padding: 0px 20px;
+    }
+}
