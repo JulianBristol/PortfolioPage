@@ -1,14 +1,13 @@
-/* eslint-disable */
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Contact, StarsCanvas } from './JS_MASTERY_Components';
 import Hero from './components/Hero/Hero.jsx';
 import Header from './header/Header.jsx';
 import BackgroundShapes from './components/Background/BackgroundShapes.jsx';
-import Current from './components/Current/Current';
-import History from './components/History/History';
-import Tech from './components/Tech/Tech';
-import Portfolio from './components/Portfolio/Portfolio';
+import Current from './components/Current/Current.jsx';
+import History from './components/History/History.jsx';
+import Tech from './components/Tech/Tech.jsx';
+import Portfolio from './components/Portfolio/Portfolio.jsx';
 
 function App() {
   return (

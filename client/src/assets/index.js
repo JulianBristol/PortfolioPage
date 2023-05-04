@@ -1,6 +1,5 @@
 import github from './github.png';
-import menu from './menu.svg';
-import close from './close.svg';
+import website from './website.png';
 
 import css from './tech/css.png';
 import figma from './tech/figma.png';
@@ -24,8 +23,7 @@ import tripguide from './tripguide.png';
 
 export {
   github,
-  menu,
-  close,
+  website,
   css,
   figma,
   git,
