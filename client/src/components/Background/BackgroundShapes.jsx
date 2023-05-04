@@ -1,4 +1,3 @@
-/* eslint-disable prefer-const */
 import React, { useEffect } from 'react';
 import { IoLogoNodejs, IoLogoHtml5, IoLogoGithub, IoLogoCss3 } from 'react-icons/io';
 import { HiStar, HiCloud } from 'react-icons/hi2';
@@ -49,11 +48,8 @@ const BackgroundShapes = () => {
       const scrollFactor = 0.7;
       const parallaxValue = Math.floor(pageTop * scrollFactor);
 
-      /* const regex = /transform:\s*\d+px\s+(\d+)px;/; */
       const regex = /^\s*transform\s*:\s*translateY\(\s*\d+(?:\.\d+)?px\s*\)\s*;\s*$/;
-      /* const updatedStyle = target.getAttribute('style').replace(regex, `translate: 30px ${parallaxValue}px;`); */
       const updatedStyle = target.getAttribute('style').replace(regex, `transform: translateY( ${parallaxValue}px);`);
-      console.log(updatedStyle);
       target.setAttribute('style', updatedStyle);
     };
 
@@ -62,12 +58,12 @@ const BackgroundShapes = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  let centerX = window.innerWidth / 2;
-  let centerY = window.innerHeight / 2;
+  const centerX = window.innerWidth / 2;
+  const centerY = window.innerHeight / 2;
 
   const moveComponents = (e) => {
-    let amountMovedX = (centerX - e.clientX) / 20;
-    let amountMovedY = (centerY - e.clientY) / 20;
+    const amountMovedX = (centerX - e.clientX) / 20;
+    const amountMovedY = (centerY - e.clientY) / 20;
 
     $('.shapeGp1')
       .css('transform', `translate3d(${amountMovedX * 9}px, ${amountMovedY * 4}px, 0)
@@ -98,10 +94,9 @@ const BackgroundShapes = () => {
     return () => {
       document.body.removeEventListener('mousemove', handleMouseMove);
     };
-  }, []);
+  });
 
   return (
-    /* <div id='shapesContainer' style={{ transform: '0px 0px' }}> */
     <div id='shapesContainer' style={{ transform: 'translateY(0px)' }}>
       <IoLogoNodejs className={`bgShape ${randomizeColor()} ${randomizeSize()} x0 y0 shapeGp1`}/>
 
