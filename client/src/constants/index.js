@@ -1,21 +1,16 @@
 /* eslint-disable max-len */
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
+  mysql,
   git,
   figma,
-  docker,
   capella,
   lykka,
   carrent,
@@ -49,25 +44,6 @@ export const navLinks = [
   },
 ];
 
-const services = [
-  {
-    title: 'Web Developer',
-    icon: web,
-  },
-  {
-    title: 'React Native Developer',
-    icon: mobile,
-  },
-  {
-    title: 'Backend Developer',
-    icon: backend,
-  },
-  {
-    title: 'Content Creator',
-    icon: creator,
-  },
-];
-
 const technologies = [
   {
     name: 'HTML 5',
@@ -90,10 +66,6 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
     name: 'Tailwind CSS',
     icon: tailwind,
   },
@@ -106,6 +78,10 @@ const technologies = [
     icon: mongodb,
   },
   {
+    name: 'MySQL',
+    icon: mysql,
+  },
+  {
     name: 'Three JS',
     icon: threejs,
   },
@@ -116,10 +92,6 @@ const technologies = [
   {
     name: 'figma',
     icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
   },
 ];
 
@@ -255,4 +227,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { technologies, experiences, testimonials, projects };
