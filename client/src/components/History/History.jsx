@@ -45,7 +45,7 @@ const History = () => {
 
   return (
     <>
-    <motion.div variants={textVariant()}>
+    <motion.div className='history' variants={textVariant()}>
     <h2 className='sectionTitle'>What Have I Done So Far?</h2>
     </motion.div>
     <div className='verticalTimelineContainer'>

@@ -7,8 +7,8 @@ import { SectionWrapper } from '../../hoc';
 
 const Current = () => (
     <div id='currentBG'>
-    <div id='current'>
-      <motion.div variants={textVariant()}>
+    <div id='currentDiv'>
+      <motion.div variants={textVariant()} style={{ display: 'grid' }}>
         <h2 className='sectionTitle'>What Am I Learing Now?</h2>
         </motion.div>
         <div className='columns'>

@@ -108,7 +108,11 @@ button:hover {
   color: var(--yellow-neon);
   text-shadow: 0px 0px 8px #bfbd5f76;
 }
-
+#history {
+  display: block;
+  padding-bottom: 120px;
+  transition: all 0.5s ease-in-out !important;
+}
 
 
 
@@ -324,6 +328,9 @@ button:hover {
   .sectionTitle{
       font-size: 4rem;
   }
+  #history {
+    padding-bottom: 260px;
+  }
 }
 
 /* Large Screens - 1200px */
@@ -336,6 +343,12 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 1020px){
+  #history {
+    padding-bottom: 360px;
+  }
+}
+
 /* Medium Screens - 900px */
 @media screen and (max-width: 900px){
   .hide_md{
@@ -343,6 +356,11 @@ button:hover {
   }
   .show_md {
     display: block !important;
+  }
+}
+@media screen and (max-width: 656px){
+  .sectionTitle{
+    font-size: 3rem !important;
   }
 }
 

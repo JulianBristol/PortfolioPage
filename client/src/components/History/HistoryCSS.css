@@ -1,3 +1,6 @@
+.history h2{
+    transition: all 0.5s ease-in-out;
+}
 .verticalTimelineContainer{
     margin-top: 20px;
     background: rgba(18,18,18,0.8);
@@ -7,6 +10,13 @@
     border-radius: 12px;
     display: flex;
     flex-direction: column;
+}
+.vertical-timeline::before {
+    background: var(--red-neon);
+    box-shadow: 0px 0px 4px #8c162891;
+}
+.vertical-timeline-element-icon{
+    box-shadow: 0 0 0 4px var(--yellow-dull), inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05);
 }
 .vertical-timeline-element-content{
     background: -webkit-linear-gradient(-183deg, #010000 0%, #2d080d 50%);

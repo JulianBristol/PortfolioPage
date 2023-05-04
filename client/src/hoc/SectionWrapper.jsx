@@ -5,6 +5,7 @@ import { staggerContainer } from '../utils/motion';
 const SectionWrapper = (Component, idName, widthBypass) => function HOC() {
   return (
         <motion.div
+        id={`motionDiv-${idName}`}
         variants={staggerContainer()}
         initial='hidden'
         whileInView='show'
@@ -13,7 +14,7 @@ const SectionWrapper = (Component, idName, widthBypass) => function HOC() {
           padding: `${widthBypass ? '0px' : '10px'}`,
           maxWidth: `${widthBypass ? '100%' : '900px'}`,
           margin: 'auto',
-          position: 'relative'
+          position: 'relative',
         }}
         >
           <span id={idName}>&nbsp;</span>
