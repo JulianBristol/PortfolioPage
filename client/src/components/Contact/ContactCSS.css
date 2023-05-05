@@ -1,0 +1,77 @@
+#contact{
+    margin-bottom: 100px;
+    display: block;
+}
+#motionDiv-contact .sectionTitle{
+    display: flex;
+    justify-content: center;
+}
+.contactContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    padding: 30px; 
+    overflow: hidden;
+}
+.contactFormContainer{
+    background: linear-gradient(185deg, #010000af, #2a0a10af);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--red-neon);    
+    box-shadow: 0px 0px 15px #cc112d75;
+    padding: 40px;
+    border-radius: 15px;
+    flex: 0.75;
+}
+.contactForm{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.formLabel{
+    display: flex;
+    flex-direction: column;
+}
+.formLabelText{
+    font-family: Lobster;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--red-main);
+}
+.formInput{
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-family: Gelasio;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: var(--dark-accent);
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #bfbd5fa6;
+}
+
+.earthContainer{
+    flex: 1;
+    height: auto;
+    background-color: red;
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 1280px){
+    .contactContainer{
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        flex: 1;
+    }
+    .earthContainer{
+        height: 550px;
+    }
+}
+@media screen and (max-width: 700px){
+    .earthContainer{
+        height: 350px;
+    }
+}

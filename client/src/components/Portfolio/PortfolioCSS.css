@@ -16,7 +16,7 @@
     margin-top: 30px;
     padding: 0px 50px;
     font-family: Gelasio;
-    color: var(--red-neon);
+    color: var(--red-main);
     text-shadow: 0px 0px 4px #8c16278c;
     max-width: 1400px;
     display: flex;
@@ -31,11 +31,11 @@
     justify-content: center;
 }
 .tiltComponent{
-    background: var(--red-main);
+    background: linear-gradient(0deg, var(--yellow-neon) 0%, #7B1D2B00 15%, #7B1D2B00 85%, var(--red-neon) 100%);
     border-radius: 10px;
     width: 360px;
-    box-shadow: 0px 0px 5px var(--red-neon);
-    padding: 15px;
+    /* box-shadow: 0px 0px 5px var(--red-neon); */
+    padding: 3px;
 }
 .tiltComponent:hover .gitOverlay, .tiltComponent:hover .activeOverlay{
     opacity: 1;
@@ -44,7 +44,6 @@
     background: var(--red-neon);
     border-radius: 10px;
     background: linear-gradient(185deg, #010000, #2a0a10);
-    min-height: 535px;
 }
 .cardImgContainer{
     height: 236px;
@@ -106,12 +105,10 @@
     font-size: 1.3rem;
 }
 .skillTags{
-    position: absolute;
+    position: relative;
     display: flex;
-    margin: 15px;
     flex-wrap: wrap;
     gap: 10px;
-    bottom: 10px;
     font-family: Gelasio;
 }
 

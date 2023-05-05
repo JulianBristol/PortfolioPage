@@ -22,9 +22,9 @@
   /* font-family: "Gelasio", sans-serif; */
   scroll-behavior: smooth;
   color-scheme: dark;
-    --red-main: #8C1627;
+    --red-dull: #8C1627;
+    --red-main: #EC1334;
     --red-neon: #CC112C;
-    --yellow-dull: #BFBE5F;
     --yellow-main: #FFD486;
     --yellow-neon: #ECEA33;
     --dark-main: #0E0904;

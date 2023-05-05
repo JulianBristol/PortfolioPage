@@ -8,7 +8,7 @@
     top: 8px;
     right: 47px;
     border-radius: 17px;
-    box-shadow: 0 0 5px 0px var(--red-main);
+    box-shadow: 0 0 5px var(--red-dull);
     border: 1px solid var(--red-neon);
     transition: all 0.5s ease-in-out;
 }
@@ -21,7 +21,7 @@
     top: 0;
     right: 0;
     border-radius: 17px 0 0 17px;
-    box-shadow: 0 0 15px 4px var(--red-main);
+    box-shadow: 0 0 8px  var(--red-dull);
     border: 3px solid var(--red-neon);
     border-right: 0px solid red;
 }

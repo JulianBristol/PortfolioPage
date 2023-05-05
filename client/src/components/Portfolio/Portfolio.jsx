@@ -55,13 +55,13 @@ const Portfolio = () => {
                 <div className='cardText'>
                     <h3>{name}</h3>
                     <p>{description}</p>
-                </div>
                 <div className='skillTags'>
                     {tags.map((tag) => (
                         <p key={tag.name} style={{ color: tag.color }}>
                             #{tag.name}
                         </p>
                     ))}
+                </div>
                 </div>
                 </div>
             </Tilt>

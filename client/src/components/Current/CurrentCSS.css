@@ -42,7 +42,7 @@
 #currentDiv p{
     font-size: 2rem;
     font-family: Gelasio;
-    color: var(--red-neon);
+    color: var(--red-main);
     text-shadow: 0px 0px 4px #8c16278c;
 }
 #currentDiv p span{

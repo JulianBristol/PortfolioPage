@@ -120,7 +120,7 @@
     animation: wobbling 12s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
    }
    .C{
-    background-color: var(--red-main);
+    background-color: var(--red-dull);
     left: 30px;
     top: -35px;
    }
