@@ -60,45 +60,11 @@
 #currentDiv .avocadoToastContainer:active .rotateHintContainer{
     opacity: 0;
 }
-#currentDiv .rotateHintContainer{
-    position: absolute;
-    bottom: 100px;
-    width: 100%;
-    display: grid;
-    justify-self: center;
-    justify-items: center;
-}
-#currentDiv .rotateHint{
-    width: 64px;
-    height: 35px;
-    border-radius: 15px;
-    border: 4px solid #F1F1F1;
-    display: grid;
-    justify-content: center;
-    justify-items: start;
-    padding: 2px;
-}
-#currentDiv .motionArrow{
-    width: 64px;
-    color: #f1f1f1;
-    align-self: center;
-    justify-self: center;
-    margin-top: -2.5px;
-    transition: all 0s ease-in-out !important;
-}
-#currentDiv .motionArrow svg{
-    fill: #f1f1f1;
-    height: 40px;
-}
 
 /* Responsiveness */
 @media screen and (max-width: 1280px){
     #currentBG{
         height: 600px;
-    }
-    #currentDiv .currentStudies{
-        /* width: 640px; */
-        /* text-align: center; */
     }
     #currentDiv .avocadoToastContainer{
         left: 20%;
@@ -135,7 +101,6 @@
         margin-top: 50px;
         margin-left: -450px;
         left: 50%;
-        
     }
 }
 
