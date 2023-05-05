@@ -17,9 +17,43 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-  const handleSubmit = (e) => {};
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs.send(
+      'service_9bwd41f',
+      'template_ra0uwj7',
+      {
+        from_name: form.name,
+        to_name: 'Julian',
+        from_email: form.email,
+        to_email: 'bristoljulian.r+portfolioPages@gmail.com',
+        message: form.message,
+      },
+      'OlSnfvmPWtVDrhrgi'
+    )
+    .then(() => {
+      setLoading(false);
+      alert('Thank you. I will get back to you as soon as possible');
+      
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      })
+    }, (error) => {
+      setLoading(false);
+      console.log(error);
+      alert('Something went wrong with my email service. Send me an email directly at bristoljulian.r@gmail.com')
+    })
+  };
 
   return (
     <div className='contactContainer'>

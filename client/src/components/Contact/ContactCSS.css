@@ -55,6 +55,7 @@
     outline: none;
     border: none;
     background-color: var(--dark-accent);
+    color: var(--yellow-neon)
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #bfbd5fa6;
