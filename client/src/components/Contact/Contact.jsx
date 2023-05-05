@@ -3,9 +3,10 @@ import React, { useRef, useState } from 'react';
 import './ContactCSS.css';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import { EarthCanvas } from '../../JS_MASTERY_Components';
+import { EarthCanvas } from '../3D_Components/index';
 import { SectionWrapper } from '../../hoc';
 import { slideIn } from '../../utils/motion';
+import RotateHint from '../RotateHint';
 
 const Contact = () => {
   const formRef = useRef();
@@ -23,7 +24,7 @@ const Contact = () => {
   return (
     <div className='contactContainer'>
       <motion.div className='contactFormContainer' variants={slideIn('left', 'tween', 0.2, 1)}>
-        <h3 className='sectionTitle'>Contact Me Anywhere, Anytime</h3>
+        <h3 className='sectionTitle'>Contact Me</h3>
         <form
         ref={formRef}
         onSubmit={handleSubmit}
@@ -70,6 +71,7 @@ const Contact = () => {
 
       <motion.div className='earthContainer' variants={slideIn('right', 'tween', 0.2, 1)}>
         <EarthCanvas />
+        <RotateHint bottom='20px'/>
       </motion.div>
     </div>
   );

@@ -12,7 +12,7 @@ const SectionWrapper = (Component, idName, widthBypass) => function HOC() {
         viewport={{ once: true, amount: 0.25 }}
         style={{
           padding: `${widthBypass ? '0px' : '10px'}`,
-          maxWidth: `${widthBypass ? '100%' : '900px'}`,
+          maxWidth: `${widthBypass ? '100%' : '1280px'}`,
           margin: 'auto',
           position: 'relative',
         }}

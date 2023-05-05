@@ -1,8 +1,7 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
+import PropTypes from 'prop-types';
 import { fadeIn, textVariant } from '../../utils/motion';
 import { SectionWrapper } from '../../hoc';
 import { github, website } from '../../assets';
@@ -88,6 +87,16 @@ const Portfolio = () => {
         </div>
     </>
   );
+};
+
+Portfolio.propTypes = {
+  index: PropTypes.number,
+  name: PropTypes.string,
+  description: PropTypes.string,
+  tags: PropTypes.arrayOf(PropTypes.string),
+  image: PropTypes.object,
+  sourceCodeLink: PropTypes.string,
+  activeLink: PropTypes.string,
 };
 
 export default SectionWrapper(Portfolio, 'portfolio', true);

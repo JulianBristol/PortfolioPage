@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import AvocadoToastCanvas from '../../JS_MASTERY_Components/canvas/AvocadoToast.jsx';
+import { AvocadoToastCanvas } from '../3D_Components/index';
 import './CurrentCSS.css';
 import { fadeIn, textVariant } from '../../utils/motion';
 import { SectionWrapper } from '../../hoc';

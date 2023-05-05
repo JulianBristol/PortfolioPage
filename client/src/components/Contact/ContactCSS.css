@@ -11,7 +11,7 @@
     flex-direction: row;
     gap: 60px;
     padding: 30px; 
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .contactFormContainer{
     background: linear-gradient(185deg, #010000af, #2a0a10af);
@@ -22,6 +22,15 @@
     padding: 40px;
     border-radius: 15px;
     flex: 0.75;
+    transition: all 0.5s ease-in-out;
+}
+.contactFormContainer h3{
+    font-size: 4rem;
+    font-family: Lobster;
+    color: var(--yellow-neon);
+    text-shadow: 0px 0px 8px #bfbd5f76;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
 }
 .contactForm{
     margin-top: 75px;
@@ -42,7 +51,6 @@
 .formInput{
     padding: 15px 20px;
     font-size: 1.2rem;
-    font-family: Gelasio;
     border-radius: 10px;
     outline: none;
     border: none;
@@ -55,34 +63,37 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 .earthContainer{
     flex: 1;
     height: auto;
-    background-color: red;
+    width: 630px;
+    display: grid;
+    justify-content: center;
+    justify-self: center;
 }
-
-
-
-
-
-/* 
-#currentDiv .earthContainer:active .rotateHintContainer{
+ .earthContainer:active .rotateHintContainer{
     opacity: 0;
-} */
-
-
+}
 
 
 /* Responsiveness */
 @media screen and (max-width: 1280px){
     .contactContainer{
         flex-direction: column-reverse;
-        margin-top: 50px;
+        margin-top: -50px;
         flex: 1;
     }
+    .contactFormContainer{
+        margin: 0 50px;
+    }
     .earthContainer{
-        height: 550px;
+        min-height: 450px;
+        width: 100%;
+        flex: none;
     }
 }
 @media screen and (max-width: 700px){
     .earthContainer{
-        height: 350px;
+        justify-content: center;
+    }
+    .contactFormContainer{
+        margin: 0px;
     }
 }

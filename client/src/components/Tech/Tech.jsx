@@ -1,21 +1,17 @@
-/* eslint-disable */
-import React from 'react'
+import React from 'react';
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../../hoc';
 import { technologies } from '../../constants';
-import './TechCSS.css'
+import './TechCSS.css';
 
-const Tech = () => {
-  const movement = 4;
-
-  return (
+const Tech = () => (
     <div className='techContainer'>
-      {technologies.map((technology, index) => (
+      {technologies.map((technology) => (
         <motion.div
         className='techItem'
         key={technology.name}
         >
-          <motion.div 
+          <motion.div
         animate={{
           zoom: [0.85, 1, 0.85],
         }}
@@ -32,7 +28,6 @@ const Tech = () => {
         </motion.div>
       ))}
     </div>
-  )
-}
+);
 
-export default SectionWrapper(Tech, '', true)
+export default SectionWrapper(Tech, '', true);

@@ -1,6 +1,5 @@
 #menuBarContainer{
     background: linear-gradient(180deg, #713939 0%, #120606 2.92%, #120606 96.43%, #321717 97.7%, #120606 100%);
-
     height: 75px;
     width: 75px;
     overflow: hidden;
@@ -14,7 +13,6 @@
 }
 #menuBarContainer.active{
     background: linear-gradient(180deg, #713939 0%, #120606 1.4%, #120606 98%, #321717 99%, #120606 100%);
-
     height: 425px;
     width: 400px;
     position: absolute;

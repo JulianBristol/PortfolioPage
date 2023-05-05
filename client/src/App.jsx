@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { StarsCanvas } from './JS_MASTERY_Components';
+import { StarsCanvas } from './components/3D_Components/index';
 import Hero from './components/Hero/Hero.jsx';
 import Header from './header/Header.jsx';
 import BackgroundShapes from './components/Background/BackgroundShapes.jsx';
