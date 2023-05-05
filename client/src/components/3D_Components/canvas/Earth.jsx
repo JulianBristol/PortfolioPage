@@ -28,7 +28,7 @@ const EarthCanvas = () => {
       const handleMediaQueryChange = (event) => {
         setIsTablet(event.matches);
       }
-      console.log(isTablet);
+      
       /* Add the callback function as a listener for media query changes */
       mediaQuery.addEventListener('change', handleMediaQueryChange);
 

@@ -26,8 +26,8 @@ function App() {
           <History />
           <Tech />
           <Portfolio />
+          <div className='starsPlacement'>
             <Contact />
-          <div className='relative z-0'>
             <StarsCanvas />
           </div>
         </div>
