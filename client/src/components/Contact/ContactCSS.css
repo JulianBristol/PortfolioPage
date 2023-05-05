@@ -59,6 +59,17 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 }
 
 
+
+
+
+/* 
+#currentDiv .earthContainer:active .rotateHintContainer{
+    opacity: 0;
+} */
+
+
+
+
 /* Responsiveness */
 @media screen and (max-width: 1280px){
     .contactContainer{

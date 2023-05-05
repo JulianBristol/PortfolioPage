@@ -20,7 +20,7 @@ const Tech = () => {
           zoom: [0.85, 1, 0.85],
         }}
         transition={{
-          duration: 8 + (index*2)/5,
+          duration: 8 * 1 + Math.random(),
           repeat: Infinity,
           repeatType: 'loop'
         }}>

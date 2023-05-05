@@ -66,6 +66,7 @@ const AvocadoToastCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
+        autoRotate
           enableZoom={false}
           maxPolarAngle={Math.PI / 3.5}
           minPolarAngle={Math.PI / 3.5}

@@ -57,6 +57,9 @@
     left: 420px;
     z-index: -1;
 }
+#currentDiv .avocadoToastContainer:active .rotateHintContainer{
+    opacity: 0;
+}
 #currentDiv .rotateHintContainer{
     position: absolute;
     bottom: 100px;
