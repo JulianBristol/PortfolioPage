@@ -67,7 +67,7 @@ const AvocadoToastCanvas = () => {
         preserveDrawingBuffer: true,
       }}
     >
-      <Suspense fallback={<CanvasLoader />}>
+      <Suspense fallback={<CanvasLoader marginLeft='-70px'/>}>
         <OrbitControls
         autoRotate
         autoRotateSpeed={0.75}

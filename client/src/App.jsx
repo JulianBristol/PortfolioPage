@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { StarsCanvas } from './components/3D_Components/index';
@@ -16,7 +17,6 @@ function App() {
       <Header />
       <div id='headerBorder'/>
       <div id='headerBorderBlur'/>
-      {/* <div id ='main_page' className="App"> */}
         <BackgroundShapes />
         <div className='pageContent'>
           <div className='spacer'/>
@@ -31,7 +31,6 @@ function App() {
             <StarsCanvas />
           </div>
         </div>
-      {/* </div> */}
     </BrowserRouter>
   );
 }
