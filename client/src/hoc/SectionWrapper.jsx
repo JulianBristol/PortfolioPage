@@ -17,7 +17,7 @@ const SectionWrapper = (Component, idName, widthBypass) => function HOC() {
           position: 'relative',
         }}
         >
-          <span id={idName}>&nbsp;</span>
+          <span id={idName} style={{ userSelect: 'none' }}>&nbsp;</span>
             <Component />
         </motion.div>
   );
