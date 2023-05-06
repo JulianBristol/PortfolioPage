@@ -54,7 +54,9 @@
     left: 420px;
     z-index: -1;
     user-select: none;
-    pointer-events: none;
+}
+#avocadoToastCanvas{
+    pointer-events: none !important;
 }
 
 /* Responsiveness */
