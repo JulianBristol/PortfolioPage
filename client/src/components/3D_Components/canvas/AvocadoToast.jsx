@@ -28,7 +28,7 @@ const AvocadoToast = ({ isMobile }) => {
       {/* eslint-disable-next-line react/no-unknown-property */}
       <group position={isMobile ? [0, 0.25, 0.55] : [0, 0.25, -1.25]}>
       {/* eslint-disable-next-line react/no-unknown-property */}
-      <primitive object={pivot} scale={isMobile ? 5 : 6.9} />
+      <primitive object={pivot} scale={isMobile ? 6 : 6.9} />
     </group>
     </mesh>
   );

@@ -14,7 +14,7 @@ import Contact from './components/Contact/Contact.jsx';
 function App() {
   return (
     <BrowserRouter>
-      <Header />
+      {/* */} <Header />
       <div id='headerBorder'/>
       <div id='headerBorderBlur'/>
         <BackgroundShapes />
