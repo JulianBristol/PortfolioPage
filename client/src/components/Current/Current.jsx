@@ -4,7 +4,6 @@ import { AvocadoToastCanvas } from '../3D_Components/index';
 import './CurrentCSS.css';
 import { fadeIn, textVariant } from '../../utils/motion';
 import { SectionWrapper } from '../../hoc';
-import RotateHint from '../RotateHint.jsx';
 
 const Current = () => (
     <div id='currentBG'>
@@ -21,7 +20,6 @@ const Current = () => (
             </motion.div>
             <div className='avocadoToastContainer'>
               <AvocadoToastCanvas />
-              <RotateHint />
             </div>
         </div>
     </div>

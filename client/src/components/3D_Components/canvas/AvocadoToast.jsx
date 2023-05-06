@@ -28,7 +28,7 @@ const AvocadoToast = ({ isMobile }) => {
       {/* eslint-disable-next-line react/no-unknown-property */}
       <group position={isMobile ? [0, 0.25, 0.55] : [0, 0.25, -1.25]}>
       {/* eslint-disable-next-line react/no-unknown-property */}
-      <primitive object={pivot} scale={isMobile ? 5 : 6.75} />
+      <primitive object={pivot} scale={isMobile ? 5 : 6.9} />
     </group>
     </mesh>
   );
@@ -59,6 +59,7 @@ const AvocadoToastCanvas = () => {
 
   return (
     <Canvas
+    id='avocadoToastCanvas'
       frameloop='demand'
       shadows
       camera={{ position: [20, 3, 4], fov: 45 }}
@@ -69,7 +70,10 @@ const AvocadoToastCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
         autoRotate
+        autoRotateSpeed={0.75}
           enableZoom={false}
+          enablePan={false}
+          enableRotate={false}
           maxPolarAngle={Math.PI / 3.5}
           minPolarAngle={Math.PI / 3.5}
         />
