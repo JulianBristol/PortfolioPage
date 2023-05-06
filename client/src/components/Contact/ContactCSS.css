@@ -22,7 +22,7 @@
     padding: 40px;
     border-radius: 15px;
     flex: 0.75;
-    transition: all 0.5s ease-in-out;
+    transition: margin 0.5s ease-in-out;
 }
 .contactFormContainer h3{
     font-size: 4rem;
