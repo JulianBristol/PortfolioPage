@@ -7,10 +7,6 @@
 }
 .bgShape {
     position: absolute;
-    -webkit-transition: all 1.5s cubic-bezier(0.215, 0.61, 0.355, 0.95);
-    -moz-transition: all 1.5s cubic-bezier(0.215, 0.61, 0.355, 0.95);
-    -o-transition: all 1.5s cubic-bezier(0.215, 0.61, 0.355, 0.95);
-    transition: all 1.5s cubic-bezier(0.215, 0.61, 0.355, 0.95);
 }
 .sm {
     font-size: 1rem;
@@ -36,45 +32,25 @@
 .pinks {
     color: #FFAAAA;
 }
-.x0 {
-    left: -3%;
+.shapesPlane{
+    height: 150%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    -webkit-transition: all 1.5s cubic-bezier(0.215, 0.61, 0.355, 0.95);
+    -moz-transition: all 1.5s cubic-bezier(0.215, 0.61, 0.355, 0.95);
+    -o-transition: all 1.5s cubic-bezier(0.215, 0.61, 0.355, 0.95);
+    transition: all 1.5s cubic-bezier(0.215, 0.61, 0.355, 0.95);
 }
-.x1 {
-    left: 10%;
+/* .shapeGp1{
+    background-color: #FF000033;
 }
-.x2 {
-    left: 25%;
+.shapeGp2{
+    background-color: #00FFFF33;
 }
-.x3 {
-    left: 50%;
+.shapeGp3{
+    background-color: #00FF0033;
 }
-.x4 {
-    left: 80%;
-}
-.x5 {
-    left: 97%;
-}
-.x6 {
-    left: 103%;
-}
-.y0 {
-    top: -3%;
-}
-.y1 {
-    top: 10%;
-}
-.y2 {
-    top: 25%;
-}
-.y3 {
-    top: 50%;
-}
-.y4 {
-    top: 80%;
-}
-.y5 {
-    top: 97%;
-}
-.y6 {
-    top: 103%;
-}
+.shapeGp4{
+    background-color: #0000FF33;
+} */

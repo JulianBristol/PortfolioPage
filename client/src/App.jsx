@@ -1,9 +1,10 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { StarsCanvas } from './components/3D_Components/index';
 import Hero from './components/Hero/Hero.jsx';
 import Header from './header/Header.jsx';
-/* import BackgroundShapes from './components/Background/BackgroundShapes.jsx'; */
+import BackgroundShapes from './components/Background/BackgroundShapes.jsx';
 import Current from './components/Current/Current.jsx';
 import History from './components/History/History.jsx';
 import Tech from './components/Tech/Tech.jsx';
@@ -16,8 +17,7 @@ function App() {
       <Header />
       <div id='headerBorder'/>
       <div id='headerBorderBlur'/>
-      {/* <div id ='main_page' className="App">
-        <BackgroundShapes /> */}
+        <BackgroundShapes />
         <div className='pageContent'>
           <div className='spacer'/>
           <Hero />
@@ -31,7 +31,6 @@ function App() {
             <StarsCanvas />
           </div>
         </div>
-      {/* </div> */}
     </BrowserRouter>
   );
 }

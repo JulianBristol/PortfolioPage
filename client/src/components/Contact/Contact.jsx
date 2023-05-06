@@ -73,6 +73,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder='What&apos;s your name?'
                 className='formInput'
+                required={true}
                 />
             </label>
 
@@ -85,6 +86,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder='What&apos;s your email?'
                 className='formInput'
+                required={true}
                 />
             </label>
 
@@ -97,6 +99,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder='What&apos;s your message?'
                 className='formInput'
+                required={true}
                 />
             </label>
             <button className='btn' type='submit'>{loading ? 'Sending...' : 'Send'}</button>
