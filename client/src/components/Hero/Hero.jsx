@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <div>
         <div id="welcome">
-            <div className='backgroundBlur'>
+            <div className='heroContainer'>
                 <div className={`welcomeMessage ${toggleText ? 'pos1' : 'pos2'}`}>
                     <div className='welcomeContent'>
 
@@ -34,7 +34,7 @@ const Hero = () => {
                                 </h1>
                                 <div className='paragraphContainer'>
                                 <div className={`julian_description ${toggleText ? 'desc1' : 'desc2'}`}>
-                                <p className='primaryDesc'>I&apos;m a <span className='jobTitle'>Full-Stack Developer</span> who is passionate about creating interactive web applications as well as developing interesting software and experiences.</p>
+                                <p className='primaryDesc'>I&apos;m a <span className='jobTitle'>Full-Stack Developer</span> who is passionate about creating interactive web applications as well as developing interesting software and experiences that are out of this world.</p>
                                 <div className='secondaryDesc'>
                                 <p>I am a philomath and a self-proclaimed ex-evil scientist, which means that I derive joy and entertainment from learning new things.</p>
                                 <p>Where does the &quot;evil scientist&quot; part fit in?  Well, I was the type of kid who enjoyed taking apart electronic devices and game systems just to see what was inside (and maybe to steal their magnets and lasers). Over time, that destructive search for knowledge mellowed out into a more systematic approach.
