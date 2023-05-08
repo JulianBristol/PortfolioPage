@@ -97,7 +97,8 @@
     margin-top: -1%;
     width: 550px;
     height: 680px;
-    border-radius: 56px 56px 56px 0px;
+    border-radius: 56px;
+    overflow: hidden;
    }
    .A{
     background-color: #360A11;
@@ -487,7 +488,8 @@
       margin-left: -30px;
     }
     .welcomeRight .JulianBristol {
-      width: 360px;
+      /* width: 360px; */
+      width: 228px;
       font-size: 4rem;
       margin-bottom: 60px;
     }
@@ -526,4 +528,167 @@
       left: 50%;
       margin-left: -180px;
     }
+  }
+  @media screen and (max-width: 480px) {
+    .welcomeMessage::before{
+        width: 321px;
+    }
+    .welcomeMessage.pos1::before{
+        height: 1180px;
+    }
+    .welcomeMessage.pos2::before{
+        height: 1380px;
+    }
+    .welcomeMessage{
+        width: 250px;
+        height: 1150px;
+    }
+    .welcomeMessage.pos1{
+        height: 1150px;
+    }
+    .welcomeMessage.pos2{
+        height: 1350px;
+    }
+    .welcomeMessage::after{
+        width: 310px;
+    }
+    .welcomeMessage.pos1::after{
+        height: 1170px;
+    }
+    .welcomeMessage.pos2::after{
+        height: 1370px;
+    }
+    .welcomeRight {
+      margin-left: auto;
+      width: 250px;
+    }
+    .welcomeRight h1 {
+      font-size: 2.5rem;
+      margin-left: auto;
+      margin-top: -20px;
+    }
+    .welcomeLeft{
+      left: -35px;
+      top: 20px;
+    }
+
+.welcomeImgBG{
+  width: 263px;
+  height: 350px;
+ }
+ .A{
+
+ }
+ .B{
+
+ }
+ .C{
+
+ }
+
+ .welcomeImg{
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .welcomeRight p{
+      font-size: 1.5rem;
+      margin: 0px auto 35px;
+    }
+    .welcomeRight .JulianBristol {
+        margin-top: 400px;
+        margin-bottom: 0px;
+        margin-left: auto;
+    }
+
+    #welcome .julian_description{
+      transition: all 0.5s ease-in-out;
+    }
+    #welcome .julian_description.desc1{
+      width: 480px;
+      left: 30px;     
+      height: 250px; 
+    }
+    #welcome .julian_description.desc2{
+      width: 1570px;
+      height: 450px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+#welcome .paragraphContainer{
+  width: 309px;
+  margin-left: -29px;
+  margin-top: 20px;
+}
+#welcome .julian_description .primaryDesc{
+  width: 260px;
+  height: 250px;
+}
+#welcome .julian_description .secondaryDesc{
+  width: 250px;
+  height: 400px;
+  margin-left: 50px;
+  overflow-y: scroll;
+  mix-blend-mode: normal;
+  background-color: #0e0505;
+  border-radius: 10px;
+  padding: 15px
+}
+#welcome .julian_description .secondaryDesc p{
+  width: 200px;
+  font-size: 1.25rem;
+}
+#welcome .toggleTextBtn.textLeft {
+  top: 0px;
+  left: 60px;
+}
+#welcome .toggleTextBtn.textRight {
+  top: 0px;
+  left: 0px;
+}
+#welcome .btnLinks{
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+}
+#welcome .btnLinks button{
+  font-size: 1rem;
+  transition: all 0.5s ease-in-out;
+  width: 85px;
+  height: 60px;
+}
   }
