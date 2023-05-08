@@ -21,7 +21,6 @@ function App() {
         <div className='pageContent'>
           <div className='spacer'/>
           <Hero />
-          <div className='spacer'/>
           <Current />
           <History />
           <Tech />

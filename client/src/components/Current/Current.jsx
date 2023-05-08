@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-/* import { AvocadoToastCanvas } from '../3D_Components/index'; */
+import { AvocadoToastCanvas } from '../3D_Components/index';
 import './CurrentCSS.css';
 import { fadeIn, textVariant } from '../../utils/motion';
 import { SectionWrapper } from '../../hoc';
 
 const Current = () => (
-    <div id='currentBG'>
+    <div id='currentBG' className='glassmorphism'>
     <div id='currentDiv'>
       <motion.div variants={textVariant()} style={{ display: 'grid' }}>
         <h2 className='sectionTitle'>What Am I Learing Now?</h2>
@@ -20,7 +20,7 @@ const Current = () => (
     </div>
     <div className='containerManager'>
             <div className='avocadoToastContainer'>
-              {/* <AvocadoToastCanvas /> */}
+              <AvocadoToastCanvas />
             </div></div>
     </div>
 );
