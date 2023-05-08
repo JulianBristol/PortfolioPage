@@ -98,3 +98,12 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
         margin: 0px;
     }
 }
+@media screen and (max-width: 500px){
+    .earthContainer{
+        min-height: 425px;
+    }
+    #earthCanvas{
+        height: 350px !important;
+        width: 350px !important;
+    }
+}

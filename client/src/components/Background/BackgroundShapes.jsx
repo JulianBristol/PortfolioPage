@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import React, { useEffect } from 'react';
 import { IoLogoNodejs, IoLogoHtml5, IoLogoGithub, IoLogoCss3 } from 'react-icons/io';
 import { HiStar, HiCloud } from 'react-icons/hi2';
@@ -119,42 +118,97 @@ const BackgroundShapes = () => {
   return (
     <div id='shapesContainer' style={{ transform: 'translateY(0px)' }}>
       <div className='shapesPlane shapeGp1' >
-      <IoLogoNodejs style={{ left: `${shapeGp1JitterX + 50}%`, top: `${shapeGp1JitterY}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()} x0`}/>
-      <HiCode style={{ left: `${shapeGp1JitterX + 25}%`, top: `${shapeGp1JitterY + 25}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <IoLogoCss3 style={{ left: `${shapeGp1JitterX + 50}%`, top: `${shapeGp1JitterY + 25}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <FaReact style={{ left: `${shapeGp1JitterX + 80}%`, top: `${shapeGp1JitterY + 50}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <HiCode style={{ left: `${shapeGp1JitterX + 25}%`, top: `${shapeGp1JitterY + 80}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <FaReact style={{ left: `${shapeGp1JitterX + 80}%`, top: `${shapeGp1JitterY + 80}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <IoLogoNodejs style={{
+        left: `${shapeGp1JitterX}%`,
+        top: `${shapeGp1JitterY}%` }}
+        className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <HiCode style={{
+        left: `${shapeGp1JitterX + 25}%`,
+        top: `${shapeGp1JitterY + 25}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <IoLogoCss3 style={{
+        left: `${shapeGp1JitterX + 50}%`,
+        top: `${shapeGp1JitterY + 25}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <FaReact style={{
+        left: `${shapeGp1JitterX + 80}%`,
+        top: `${shapeGp1JitterY + 50}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <HiCode style={{
+        left: `${shapeGp1JitterX + 25}%`,
+        top: `${shapeGp1JitterY + 80}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <FaReact style={{
+        left: `${shapeGp1JitterX + 80}%`,
+        top: `${shapeGp1JitterY + 80}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
       </div>
 
       <div className='shapesPlane shapeGp2' >
-      <IoLogoGithub style={{ left: `${shapeGp2JitterX + 10}%`, top: `${shapeGp2JitterY + 10}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <IoLogoNodejs style={{ left: `${shapeGp2JitterX + 50}%`, top: `${shapeGp2JitterY + 10}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <IoLogoGithub style={{ left: `${shapeGp2JitterX + 25}%`, top: `${shapeGp2JitterY + 25}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <HiCloud style={{ left: `${shapeGp2JitterX + 10}%`, top: `${shapeGp2JitterY + 50}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <IoLogoNodejs style={{ left: `${shapeGp2JitterX + 50}%`, top: `${shapeGp2JitterY + 50}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <HiOutlineCog style={{ left: `${shapeGp2JitterX + 80}%`, top: `${shapeGp2JitterY + 50}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <IoLogoNodejs style={{ left: `${shapeGp2JitterX + 50}%`, top: `${shapeGp2JitterY + 80}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <IoLogoGithub style={{
+        left: `${shapeGp2JitterX + 10}%`,
+        top: `${shapeGp2JitterY + 10}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <IoLogoNodejs style={{
+        left: `${shapeGp2JitterX + 50}%`,
+        top: `${shapeGp2JitterY + 10}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <IoLogoGithub style={{
+        left: `${shapeGp2JitterX + 25}%`,
+        top: `${shapeGp2JitterY + 25}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <HiCloud style={{
+        left: `${shapeGp2JitterX + 10}%`,
+        top: `${shapeGp2JitterY + 50}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <IoLogoNodejs style={{
+        left: `${shapeGp2JitterX + 50}%`,
+        top: `${shapeGp2JitterY + 50}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <HiOutlineCog style={{
+        left: `${shapeGp2JitterX + 80}%`,
+        top: `${shapeGp2JitterY + 50}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <IoLogoNodejs style={{
+        left: `${shapeGp2JitterX + 50}%`,
+        top: `${shapeGp2JitterY + 80}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
       </div>
 
       <div className='shapesPlane shapeGp3' >
-      <HiCloud style={{ left: `${shapeGp3JitterX + 10}%`, top: `${shapeGp3JitterY + 10}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <IoLogoCss3 style={{ left: `${shapeGp3JitterX + 80}%`, top: `${shapeGp3JitterY + 10}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <HiStar style={{ left: `${shapeGp3JitterX + 25}%`, top: `${shapeGp3JitterY + 25}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <FaReact style={{ left: `${shapeGp3JitterX + 50}%`, top: `${shapeGp3JitterY + 25}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <HiOutlineCog style={{ left: `${shapeGp3JitterX + 80}%`, top: `${shapeGp3JitterY + 50}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <IoLogoGithub style={{ left: `${shapeGp3JitterX + 25}%`, top: `${shapeGp3JitterY + 80}%` }} className={`bgShape ${randomizeColor()} lg`}/>
-      <IoLogoNodejs style={{ left: `${shapeGp3JitterX + 80}%`, top: `${shapeGp3JitterY + 80}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <HiCloud style={{
+        left: `${shapeGp3JitterX + 10}%`,
+        top: `${shapeGp3JitterY + 10}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <IoLogoCss3 style={{
+        left: `${shapeGp3JitterX + 80}%`,
+        top: `${shapeGp3JitterY + 10}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <HiStar style={{
+        left: `${shapeGp3JitterX + 25}%`,
+        top: `${shapeGp3JitterY + 25}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <FaReact style={{
+        left: `${shapeGp3JitterX + 50}%`,
+        top: `${shapeGp3JitterY + 25}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <HiOutlineCog style={{
+        left: `${shapeGp3JitterX + 80}%`,
+        top: `${shapeGp3JitterY + 50}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <IoLogoGithub style={{
+        left: `${shapeGp3JitterX + 25}%`,
+        top: `${shapeGp3JitterY + 80}%` }} className={`bgShape ${randomizeColor()} lg`}/>
+      <IoLogoNodejs style={{
+        left: `${shapeGp3JitterX + 80}%`,
+        top: `${shapeGp3JitterY + 80}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
       </div>
 
       <div className='shapesPlane shapeGp4' >
-      <FaReact style={{ left: `${shapeGp4JitterX + 50}%`, top: `${shapeGp4JitterY + 10}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <IoLogoHtml5 style={{ left: `${shapeGp4JitterX + 80}%`, top: `${shapeGp4JitterY + 25}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <HiCode style={{ left: `${shapeGp4JitterX + 10}%`, top: `${shapeGp4JitterY + 50}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <HiCloud style={{ left: `${shapeGp4JitterX + 25}%`, top: `${shapeGp4JitterY + 80}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <IoLogoHtml5 style={{ left: `${shapeGp4JitterX + 50}%`, top: `${shapeGp4JitterY + 50}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <IoLogoNodejs style={{ left: `${shapeGp4JitterX + 50}%`, top: `${shapeGp4JitterY + 80}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
-      <IoLogoCss3 style={{ left: `${shapeGp4JitterX + 10}%`, top: `${shapeGp4JitterY + 80}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <FaReact style={{
+        left: `${shapeGp4JitterX + 50}%`,
+        top: `${shapeGp4JitterY + 10}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <IoLogoHtml5 style={{
+        left: `${shapeGp4JitterX + 80}%`,
+        top: `${shapeGp4JitterY + 25}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <HiCode style={{
+        left: `${shapeGp4JitterX + 10}%`,
+        top: `${shapeGp4JitterY + 50}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <HiCloud style={{
+        left: `${shapeGp4JitterX + 25}%`,
+        top: `${shapeGp4JitterY + 80}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <IoLogoHtml5 style={{
+        left: `${shapeGp4JitterX + 50}%`,
+        top: `${shapeGp4JitterY + 50}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <IoLogoNodejs style={{
+        left: `${shapeGp4JitterX + 50}%`,
+        top: `${shapeGp4JitterY + 80}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
+      <IoLogoCss3 style={{
+        left: `${shapeGp4JitterX + 10}%`,
+        top: `${shapeGp4JitterY + 80}%` }} className={`bgShape ${randomizeColor()} ${randomizeSize()}`}/>
       </div>
 
     </div>

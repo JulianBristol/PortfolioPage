@@ -107,7 +107,7 @@ const Contact = () => {
       </motion.div>
 
       <motion.div className='earthContainer' variants={slideIn('right', 'tween', 0.2, 1)}>
-        <EarthCanvas />
+        {/* <EarthCanvas /> */}
         <RotateHint bottom='20px'/>
       </motion.div>
     </div>
