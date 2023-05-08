@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-/* import { AvocadoToastCanvas } from '../3D_Components/index'; */
+import { AvocadoToastCanvas } from '../3D_Components/index';
 import './CurrentCSS.css';
 import { fadeIn, textVariant } from '../../utils/motion';
 import { SectionWrapper } from '../../hoc';
@@ -20,7 +20,7 @@ const Current = () => (
     </div>
     <div className='containerManager'>
             <div className='avocadoToastContainer'>
-              {/* <AvocadoToastCanvas /> */}
+              <AvocadoToastCanvas />
             </div></div>
     </div>
 );
