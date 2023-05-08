@@ -6,7 +6,7 @@ import { fadeIn, textVariant } from '../../utils/motion';
 import { SectionWrapper } from '../../hoc';
 
 const Current = () => (
-    <div id='currentBG'>
+    <div id='currentBG' className='glassmorphism'>
     <div id='currentDiv'>
       <motion.div variants={textVariant()} style={{ display: 'grid' }}>
         <h2 className='sectionTitle'>What Am I Learing Now?</h2>

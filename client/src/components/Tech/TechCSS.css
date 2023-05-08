@@ -9,7 +9,9 @@
 .techItem{
     width: 150px;
     height: 150px;
-    background: var(--bg);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
 }
 .techItem img{
     width: 150px;

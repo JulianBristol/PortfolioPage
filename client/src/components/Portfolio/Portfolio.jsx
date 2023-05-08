@@ -68,7 +68,7 @@ const Portfolio = () => {
   );
 
   return (
-    <>
+    <div className='glassmorphism'>
         <motion.div variants={textVariant()} style={{ display: 'grid' }}>
             <h2 className='sectionTitle'>Check Out My Projects</h2>
         </motion.div>
@@ -85,7 +85,7 @@ const Portfolio = () => {
                 />
             ))}
         </div>
-    </>
+    </div>
   );
 };
 
