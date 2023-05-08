@@ -29,6 +29,7 @@
     flex-wrap: wrap;
     padding: 0px 100px;
     gap: 45px;
+    justify-content: space-evenly;
 }
 .tiltComponent{
     background: linear-gradient(0deg, var(--yellow-neon) 0%, #7B1D2B00 15%, #7B1D2B00 85%, var(--red-neon) 100%);

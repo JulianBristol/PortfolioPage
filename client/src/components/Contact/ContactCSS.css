@@ -15,8 +15,8 @@
 }
 .contactFormContainer{
     background: linear-gradient(185deg, #010000af, #2a0a10af);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     border: 1px solid var(--red-neon);    
     box-shadow: 0px 0px 15px #cc112d75;
     padding: 40px;
