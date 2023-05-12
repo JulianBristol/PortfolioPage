@@ -31,6 +31,16 @@ const Header = () => (
                     </li>
                 </a>
             ))}
+            <a href='https://blogsonia.netlify.app/' target='_blank' rel="noreferrer">
+                    <li>
+                        <span className='firstLetter'>b</span>
+                        LOG
+                        <div className='textReflection'>
+                            <span className='firstLetter'>b</span>
+                            LOG
+                        </div>
+                    </li>
+                </a>
         </ul>
             <div className='menuBtn show_md'>
                 <MenuBar />

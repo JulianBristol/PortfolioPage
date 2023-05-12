@@ -59,10 +59,10 @@ const BackgroundShapes = () => {
   const shapeGp2JitterX = randomizeJitter(3.8);
   const shapeGp3JitterX = randomizeJitter(2.5);
   const shapeGp4JitterX = randomizeJitter(1);
-  const shapeGp1JitterY = randomizeJitter(3);
-  const shapeGp2JitterY = randomizeJitter(5);
-  const shapeGp3JitterY = randomizeJitter(8);
-  const shapeGp4JitterY = randomizeJitter(10);
+  const shapeGp1JitterY = randomizeJitter(5);
+  const shapeGp2JitterY = randomizeJitter(8);
+  const shapeGp3JitterY = randomizeJitter(10);
+  const shapeGp4JitterY = randomizeJitter(13);
 
   useEffect(() => {
     const handleScroll = () => {

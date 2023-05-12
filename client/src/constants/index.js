@@ -13,9 +13,9 @@ import {
   figma,
   capella,
   lykka,
-  carrent,
-  jobit,
-  tripguide,
+  water,
+  blog,
+  travelWisely,
   threejs,
 } from '../assets';
 
@@ -32,11 +32,6 @@ export const navLinks = [
     id: 'portfolio',
     fLetter: 'p',
     title: 'ORTFOLIO',
-  },
-  {
-    id: 'blog',
-    fLetter: 'b',
-    title: 'LOG',
   },
   {
     id: 'contact',
@@ -141,70 +136,82 @@ const experiences = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Searcy Water Utilities',
     description:
-        'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+        'Revamp the existing Searcy Water Utilities website to provide information and services to the residents of Searcy Arkansas',
     tags: [
       {
-        name: 'react',
-        color: '#00d9ff',
+        name: 'Coming Soon',
+        color: '#FF0000',
       },
       {
         name: 'mongodb',
         color: '#7dc353',
       },
       {
-        name: 'tailwind',
+        name: 'expressJS',
+        color: '#CC112C',
+      },
+      {
+        name: 'react',
+        color: '#00d9ff',
+      },
+      {
+        name: 'nodejs',
+        color: '#ac22e0',
+      },
+      {
+        name: 'MUI',
         color: '#0ea5e9',
       },
     ],
-    image: carrent,
+    image: water,
     sourceCodeLink: '',
-    activeLink: '',
+    activeLink: 'http://searcywater.org/',
   },
   {
-    name: 'Job IT',
+    name: 'BlogSonia',
     description:
-        'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+        'BlogSonia is a website that combines my portfolio, blog, and thoughts with AI-generated profiles and posts. Built using ReactJS, Javascript, MUI, and several APIs, it aims to help people learn more about me and my ideas.',
     tags: [
       {
         name: 'react',
         color: '#00d9ff',
       },
       {
-        name: 'restapi',
-        color: '#FFFFFF',
+        name: 'javascript',
+        color: '#ffd600',
       },
       {
-        name: 'scss',
-        color: '#FFFFFF',
+        name: 'MUI',
+        color: '#0ea5e9',
       },
     ],
-    image: jobit,
-    sourceCodeLink: 'https://github.com/',
-    activeLink: 'https://google.com/',
+    image: blog,
+    sourceCodeLink: 'https://github.com/JulianBristol/BlogSonia',
+    activeLink: 'https://blogsonia.netlify.app/',
   },
   {
-    name: 'Trip Guide',
+    name: 'Travel Wisely',
     description:
         'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
     tags: [
       {
-        name: 'nextjs',
-        color: '#FFFFFF',
+        name: 'react',
+        color: '#00d9ff',
       },
       {
-        name: 'supabase',
-        color: '#FFFFFF',
+        name: 'javascript',
+        color: '#ffd600',
       },
       {
-        name: 'css',
-        color: '#FFFFFF',
+        name: 'MUI',
+        color: '#0ea5e9',
       },
     ],
-    image: tripguide,
-    sourceCodeLink: 'https://github.com/',
-    activeLink: 'https://google.com/',
+    image: travelWisely,
+    sourceCodeLink: 'https://github.com/JulianBristol/TravelWisely',
+    activeLink: 'https://travelwisely.netlify.app/',
   },
 ];
 
