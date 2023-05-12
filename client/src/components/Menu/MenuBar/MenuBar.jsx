@@ -25,6 +25,16 @@ const MenuBar = () => {
                     </li>
                 </a>
         ))}
+        <a href='https://blogsonia.netlify.app/' target='_blank' rel="noreferrer">
+                <li>
+                    <span className='firstLetter'>b</span>
+                    LOG
+                    <div className='textReflection'>
+                        <span className='firstLetter'>b</span>
+                        LOG
+                    </div>
+                </li>
+            </a>
 
     </div>
   );

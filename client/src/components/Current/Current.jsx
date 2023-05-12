@@ -9,7 +9,7 @@ const Current = () => (
     <div id='currentBG' className='glassmorphism'>
     <div id='currentDiv'>
       <motion.div variants={textVariant()} style={{ display: 'grid' }}>
-        <h2 className='sectionTitle'>What Am I Learing Now?</h2>
+        <h2 className='sectionTitle'>What Am I Learning Now?</h2>
         </motion.div>
             <motion.div className='currentStudies' variants={fadeIn('', '', 0.1, 1)}>
                 <p>I&apos;m on a mission to master <span>threeJS</span> and <span>machine learning</span>.</p>

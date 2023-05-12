@@ -17,9 +17,9 @@ import mysql from './tech/mysql.png';
 import capella from './company/capella.png';
 import lykka from './company/lykka.png';
 
-import carrent from './carrent.png';
-import jobit from './jobit.png';
-import tripguide from './tripguide.png';
+import water from './SearcyWaterUtilities.png';
+import blog from './BlogSonia.png';
+import travelWisely from './TravelWisely.png';
 
 export {
   github,
@@ -38,7 +38,7 @@ export {
   mysql,
   capella,
   lykka,
-  carrent,
-  jobit,
-  tripguide,
+  water,
+  blog,
+  travelWisely,
 };
