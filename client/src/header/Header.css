@@ -76,6 +76,7 @@
     color: transparent;
     transform: skew(25deg, 1deg) scale(1, -1);
     transition: all 0.3s linear;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 #headerBar .textReflection>.firstLetter{
     color: transparent;
