@@ -194,7 +194,7 @@ const projects = [
   {
     name: 'Travel Wisely',
     description:
-        'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    'A comprehensive a platform that empowers users with location-based information, weather forecasts, and recommendations for nearby restaurants, hotels, and attractions. It helps users make informed travel decisions and explore new places with confidence.',
     tags: [
       {
         name: 'react',
