@@ -170,9 +170,9 @@ const projects = [
     activeLink: 'http://searcywater.org/',
   },
   {
-    name: 'BlogSonia',
+    name: 'FaceBlog',
     description:
-        'BlogSonia is a website that combines my portfolio, blog, and thoughts with AI-generated profiles and posts. Built using ReactJS, Javascript, MUI, and several APIs, it aims to help people learn more about me and my ideas.',
+        'FaceBlog is a website that combines my portfolio, blog, and thoughts with AI-generated profiles and posts. Built using ReactJS, Javascript, MUI, and several APIs, it aims to help people learn more about me and my ideas.',
     tags: [
       {
         name: 'react',
@@ -188,8 +188,8 @@ const projects = [
       },
     ],
     image: blog,
-    sourceCodeLink: 'https://github.com/JulianBristol/BlogSonia',
-    activeLink: 'https://blogsonia.netlify.app/',
+    sourceCodeLink: 'https://github.com/JulianBristol/FaceBlog',
+    activeLink: 'https://face-blog.netlify.app',
   },
   {
     name: 'Travel Wisely',
