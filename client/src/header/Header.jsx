@@ -31,7 +31,7 @@ const Header = () => (
                     </li>
                 </a>
             ))}
-            <a href='https://blogsonia.netlify.app/' target='_blank' rel="noreferrer">
+            <a href='https://face-blog.netlify.app' target='_blank' rel="noreferrer">
                     <li>
                         <span className='firstLetter'>b</span>
                         LOG
