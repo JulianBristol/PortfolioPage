@@ -112,13 +112,25 @@ const experiences = [
     title: 'Front-End Developer Intern',
     companyName: 'Lykka Village',
     icon: lykka,
-    date: 'July 2022 - Feb 2023',
+    date: 'July 2022 - Sept 2022',
     points: [
       'Design components and webpages using UI/UX best practices.',
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Develop and maintain web applications using React.js and other related technologies.',
+      'Collaborate with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Implement responsive design and ensure cross-browser compatibility.',
+      'Participate in code reviews and provide constructive feedback to other developers.',
+    ],
+  },
+  {
+    title: 'Front-End Developer',
+    companyName: 'Lykka Village',
+    icon: lykka,
+    date: 'Sept 2022 - Feb 2023',
+    points: [
+      'Implement advanced code refactoring techniques, performance optimization - reducing database and RESTful API calls by 23%',
+      'Implement collegiate training and mentoring programs to help students master CSS3, HTML5, JavaScript, and Reactjs',
+      'Design, develop, and deploy web pages following the latest UI/UX design practices and WCAG accessibility standards',
+      'Employed the use of Gitlab to manage version control and incorporation of students\' code.'
     ],
   },
   {
