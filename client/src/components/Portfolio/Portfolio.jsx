@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 import { fadeIn, textVariant } from '../../utils/motion';
 import { SectionWrapper } from '../../hoc';
-import { github, website } from '../../assets';
+import { github } from '../../assets';
 import { projects } from '../../constants';
 import './PortfolioCSS.css';
 
@@ -19,7 +19,13 @@ const Portfolio = () => {
                 }}
                 className='tiltComponent'
             >
-                <div className='card'>
+                <div
+                className={`${'card'} ${activeLink !== undefined && activeLink !== '' ? 'pointer' : ''}`}
+                onClick={() => {
+                  if (activeLink !== undefined && activeLink !== '') {
+                    window.open(activeLink, '_blank');
+                  }
+                }}>
                 <div className='cardImgContainer'>
                     <img
                     className='cardImg'
@@ -34,18 +40,6 @@ const Portfolio = () => {
                         className='gitHubIcon'
                         src={github}
                         alt='github Link'
-                        />
-                    </div>
-                      : ''
-                    }
-                    {activeLink !== undefined && activeLink !== ''
-                      ? <div className='activeOverlay' onClick={() => {
-                        window.open(activeLink, '_blank');
-                      }}>
-                        <img
-                        className='webIcon'
-                        src={website}
-                        alt='website Link'
                         />
                     </div>
                       : ''

@@ -16,7 +16,6 @@ import {
   water,
   blog,
   travelWisely,
-  threejs,
 } from '../assets';
 
 import logo from '../assets/company/logo.svg';
@@ -76,10 +75,6 @@ const technologies = [
   {
     name: 'MySQL',
     icon: mysql,
-  },
-  {
-    name: 'Three JS',
-    icon: threejs,
   },
   {
     name: 'Java',

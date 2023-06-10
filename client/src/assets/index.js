@@ -1,5 +1,4 @@
 import github from './github.png';
-import website from './website.png';
 
 import css from './tech/css.png';
 import figma from './tech/figma.png';
@@ -23,7 +22,6 @@ import travelWisely from './TravelWisely.png';
 
 export {
   github,
-  website,
   css,
   figma,
   git,
