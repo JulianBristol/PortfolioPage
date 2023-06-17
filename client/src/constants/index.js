@@ -250,7 +250,7 @@ const projects = [
   {
     name: 'Cloudinary Image Viewer',
     description:
-    'Cloudinary is a cloud-enabled image and video storage and management site. This application displays my abilities to work with Cloudinary\'s API to upload, store, and retrieve images for view consumption. While originally intended to work with a backend server, the code has been recently modified for display using Netlify\'s serverless backend',
+    'Cloudinary is a cloud-enabled image and video storage and management site. This application displays my abilities to work with Cloudinary\'s API to upload, store, and retrieve images for viewer consumption. While originally intended to work with a backend server, the code has been recently modified for display using Netlify\'s serverless backend',
     tags: [
       {
         name: 'React.js',
