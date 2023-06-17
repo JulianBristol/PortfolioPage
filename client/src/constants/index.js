@@ -275,7 +275,7 @@ const projects = [
     ],
     image: cloudinaryDemo,
     sourceCodeLink: 'https://github.com/JulianBristol/CloudinaryImageUpload_Demo',
-    activeLink: 'https://clouduploud.netlify.app',
+    activeLink: 'https://cloudinaryupload.netlify.app/',
   },
 ];
 
