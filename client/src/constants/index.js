@@ -16,6 +16,8 @@ import {
   water,
   blog,
   travelWisely,
+  cloudinaryDemo,
+  heavensVault,
 } from '../assets';
 
 import logo from '../assets/company/logo.svg';
@@ -152,19 +154,19 @@ const projects = [
         color: '#FF0000',
       },
       {
-        name: 'mongodb',
+        name: 'MongoDB',
         color: '#7dc353',
       },
       {
-        name: 'expressJS',
+        name: 'Express.js',
         color: '#CC112C',
       },
       {
-        name: 'react',
+        name: 'React.js',
         color: '#00d9ff',
       },
       {
-        name: 'nodejs',
+        name: 'Node.js',
         color: '#ac22e0',
       },
       {
@@ -182,11 +184,11 @@ const projects = [
         'FaceBlog is a website that combines my portfolio, blog, and thoughts with AI-generated profiles and posts. Built using ReactJS, Javascript, MUI, and several APIs, it aims to help people learn more about me and my ideas.',
     tags: [
       {
-        name: 'react',
+        name: 'React.js',
         color: '#00d9ff',
       },
       {
-        name: 'javascript',
+        name: 'JavaScript',
         color: '#ffd600',
       },
       {
@@ -204,11 +206,11 @@ const projects = [
     'A comprehensive a platform that empowers users with location-based information, weather forecasts, and recommendations for nearby restaurants, hotels, and attractions. It helps users make informed travel decisions and explore new places with confidence.',
     tags: [
       {
-        name: 'react',
+        name: 'React.js',
         color: '#00d9ff',
       },
       {
-        name: 'javascript',
+        name: 'JavaScript',
         color: '#ffd600',
       },
       {
@@ -219,6 +221,61 @@ const projects = [
     image: travelWisely,
     sourceCodeLink: 'https://github.com/JulianBristol/TravelWisely',
     activeLink: 'https://travelwisely.netlify.app/',
+  },
+  {
+    name: 'Heaven\'s Vault Translator',
+    description:
+    'Heaven\'s Vault is a game with an interesting gimmick where you need to translate ancient runes into modern day language. This program acts as a translator of sorts, allowing you to Create, Read, Update, and Delete words and their meanings.',
+    tags: [
+      {
+        name: 'Java',
+        color: '#ffb5b5',
+      },
+      {
+        name: 'MySQL',
+        color: '#e38b5d',
+      },
+      {
+        name: 'CRUD',
+        color: '#c599ff',
+      },
+      {
+        name: 'SceneBuilder',
+        color: '#dffc5e',
+      },
+    ],
+    image: heavensVault,
+    sourceCodeLink: 'https://github.com/JulianBristol/HeavensVaultTranslator',
+  },
+  {
+    name: 'Cloudinary Image Viewer',
+    description:
+    'Cloudinary is a cloud-enabled image and video storage and management site. This application displays my abilities to work with Cloudinary\'s API to upload, store, and retrieve images for view consumption. While originally intended to work with a backend server, the code has been recently modified for display using Netlify\'s serverless backend',
+    tags: [
+      {
+        name: 'React.js',
+        color: '#00d9ff',
+      },
+      {
+        name: 'JavaScript',
+        color: '#ffd600',
+      },
+      {
+        name: 'CSS',
+        color: '#0ee979',
+      },
+      {
+        name: 'Node.js',
+        color: '#ac22e0',
+      },
+      {
+        name: 'Express.js',
+        color: '#CC112C',
+      },
+    ],
+    image: cloudinaryDemo,
+    sourceCodeLink: 'https://github.com/JulianBristol/CloudinaryImageUpload_Demo',
+    activeLink: 'https://clouduploud.netlify.app',
   },
 ];
 

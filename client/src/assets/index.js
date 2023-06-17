@@ -19,6 +19,8 @@ import lykka from './company/lykka.png';
 import water from './SearcyWaterUtilities.png';
 import blog from './BlogSonia.png';
 import travelWisely from './TravelWisely.png';
+import heavensVault from './HeavensVault.png';
+import cloudinaryDemo from './CloudinaryDemo.png';
 
 export {
   github,
@@ -38,5 +40,7 @@ export {
   lykka,
   water,
   blog,
+  cloudinaryDemo,
   travelWisely,
+  heavensVault,
 };

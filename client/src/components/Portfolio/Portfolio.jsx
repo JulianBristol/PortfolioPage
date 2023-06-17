@@ -62,7 +62,7 @@ const Portfolio = () => {
   );
 
   return (
-    <div className='glassmorphism'>
+    <div className='glassmorphism' style={{ maxWidth: '1500px' }}>
         <motion.div variants={textVariant()} style={{ display: 'grid' }}>
             <h2 className='sectionTitle'>Check Out My Projects</h2>
         </motion.div>
