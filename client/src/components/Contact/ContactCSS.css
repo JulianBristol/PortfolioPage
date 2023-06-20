@@ -21,8 +21,10 @@
     box-shadow: 0px 0px 15px #cc112d75;
     padding: 40px;
     border-radius: 15px;
-    flex: 0.75;
+    /* flex: 0.75; */
     transition: margin 0.5s ease-in-out;
+    width: 80%;
+    margin: 0 auto;
 }
 .contactFormContainer h3{
     font-size: 4rem;
@@ -81,9 +83,9 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
         margin-top: -50px;
         flex: 1;
     }
-    .contactFormContainer{
+    /* .contactFormContainer{
         margin: 0 50px;
-    }
+    } */
     .earthContainer{
         min-height: 450px;
         width: 100%;
@@ -94,9 +96,9 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     .earthContainer{
         justify-content: center;
     }
-    .contactFormContainer{
+    /* .contactFormContainer{
         margin: 0px;
-    }
+    } */
 }
 @media screen and (max-width: 500px){
     .earthContainer{

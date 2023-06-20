@@ -18,17 +18,17 @@ function App() {
       <div id='headerBorder'/>
       <div id='headerBorderBlur'/>
         <BackgroundShapes />
-        <div className='pageContent'>
+        {/* <div className='pageContent'> */}
           <div className='spacer'/>
+          <div className='starsPlacement'>
           <Hero />
           <Current />
           <History />
           <Tech />
           <Portfolio />
-          <div className='starsPlacement'>
             <Contact />
             <StarsCanvas />
-          </div>
+          {/* </div> */}
         </div>
     </BrowserRouter>
   );

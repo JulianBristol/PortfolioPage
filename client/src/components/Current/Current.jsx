@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { AvocadoToastCanvas } from '../3D_Components/index';
+/* import { AvocadoToastCanvas } from '../3D_Components/index'; */
 import './CurrentCSS.css';
 import { fadeIn, textVariant } from '../../utils/motion';
 import { SectionWrapper } from '../../hoc';
@@ -23,10 +23,10 @@ const Current = () => (
                 {/* <p>While I am skilled in web development, my skills in React Native need some polish. My next large project will be something interesting on mobile.</p> */}
             </motion.div>
     </div>
-    <div className='containerManager'>
+    {/* <div className='containerManager'>
             <div className='avocadoToastContainer'>
               <AvocadoToastCanvas />
-            </div></div>
+            </div></div> */}
     </div>
 );
 
