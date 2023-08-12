@@ -147,7 +147,7 @@ const projects = [
   {
     name: 'Searcy Water Utilities',
     description:
-        'Revamp the existing Searcy Water Utilities website to provide information and services to the residents of Searcy Arkansas',
+        'Revamp the existing Searcy Water Utilities website to provide information and services to the residents of Searcy Arkansas. The website is currently still in development but nearing completion. Take a look at it in development!',
     tags: [
       {
         name: 'Coming Soon',
@@ -176,7 +176,7 @@ const projects = [
     ],
     image: water,
     sourceCodeLink: '',
-    activeLink: 'http://searcywater.org/',
+    activeLink: 'http://test.searcywater.org/',
   },
   {
     name: 'FaceBlog',
@@ -245,7 +245,7 @@ const projects = [
       },
     ],
     image: heavensVault,
-    sourceCodeLink: 'https://github.com/JulianBristol/HeavensVaultTranslator',
+    activeLink: 'https://github.com/JulianBristol/HeavensVaultTranslator',
   },
   {
     name: 'Cloudinary Image Viewer',
