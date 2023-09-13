@@ -1,26 +1,27 @@
-import github from './github.png';
+import github from './github.webp';
 
-import css from './tech/css.png';
-import figma from './tech/figma.png';
-import git from './tech/git.png';
-import html from './tech/html.png';
-import javascript from './tech/javascript.png';
-import mongodb from './tech/mongodb.png';
-import nodejs from './tech/nodejs.png';
-import reactjs from './tech/reactjs.png';
-import tailwind from './tech/tailwind.png';
-import typescript from './tech/typescript.png';
+import css from './tech/css.webp';
+import figma from './tech/figma.webp';
+import git from './tech/git.webp';
+import html from './tech/html.webp';
+import javascript from './tech/javascript.webp';
+import mongodb from './tech/mongodb.webp';
+import nodejs from './tech/nodejs.webp';
+import reactjs from './tech/reactjs.webp';
+import tailwind from './tech/tailwind.webp';
+import typescript from './tech/typescript.webp';
 import threejs from './tech/threejs.svg';
-import mysql from './tech/mysql.png';
+import mysql from './tech/mysql.webp';
+import nextjs from './tech/nextjs.webp';
 
-import capella from './company/capella.png';
-import lykka from './company/lykka.png';
+import capella from './company/capella.webp';
+import lykka from './company/lykka.webp';
 
-import water from './SearcyWaterUtilities.png';
-import blog from './BlogSonia.png';
-import travelWisely from './TravelWisely.png';
-import heavensVault from './HeavensVault.png';
-import cloudinaryDemo from './CloudinaryDemo.png';
+import water from './SearcyWaterUtilities.webp';
+import blog from './BlogSonia.webp';
+import travelWisely from './TravelWisely.webp';
+import heavensVault from './HeavensVault.webp';
+import cloudinaryDemo from './CloudinaryDemo.webp';
 
 export {
   github,
@@ -29,6 +30,7 @@ export {
   git,
   html,
   javascript,
+  nextjs,
   mongodb,
   nodejs,
   reactjs,

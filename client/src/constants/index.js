@@ -9,6 +9,7 @@ import {
   nodejs,
   mongodb,
   mysql,
+  nextjs,
   git,
   figma,
   capella,
@@ -21,7 +22,7 @@ import {
 } from '../assets';
 
 import logo from '../assets/company/logo.svg';
-import java from '../assets/tech/java.png';
+import java from '../assets/tech/java.webp';
 
 export const navLinks = [
   {
@@ -51,6 +52,10 @@ const technologies = [
     icon: css,
   },
   {
+    name: 'Tailwind CSS',
+    icon: tailwind,
+  },
+  {
     name: 'JavaScript',
     icon: javascript,
   },
@@ -63,8 +68,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: 'Tailwind CSS',
-    icon: tailwind,
+    name: 'NextJS',
+    icon: nextjs,
   },
   {
     name: 'Node JS',

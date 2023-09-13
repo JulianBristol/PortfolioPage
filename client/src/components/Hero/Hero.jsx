@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React, { useEffect, useState } from 'react';
-import Julian from '../../images/Good Enough.png';
+import Julian from '../../images/Julian Bristol.webp';
 import resume from '../../assets/Resume.pdf';
 import './Hero.css';
 

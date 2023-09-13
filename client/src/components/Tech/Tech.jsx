@@ -13,7 +13,7 @@ const Tech = () => (
         >
           <motion.div
         animate={{
-          zoom: [0.85, 1, 0.85],
+          zoom: [0.95, 1, 0.95],
         }}
         transition={{
           duration: 8 * 1 + Math.random(),

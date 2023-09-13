@@ -103,21 +103,11 @@
     background-color: #360A11;
     left: 15px;
     top: -20px;
-    -webkit-animation: wobbling 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
-    -moz-animation: wobbling 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
-    -ms-animation: wobbling 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
-    -o-animation: wobbling 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite; 
-    animation: wobbling 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
    }
    .B{
     background-color: #6D1421;
     left: 35px;
     top: -35px;
-    -webkit-animation: wobbling 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
-    -moz-animation: wobbling 12s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
-    -ms-animation: wobbling 12s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
-    -o-animation: wobbling 12s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite; 
-    animation: wobbling 12s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
    }
    .C{
     background-color: var(--red-dull);
@@ -242,54 +232,6 @@
   align-self: end;
   transition: all 0.5s ease-in-out;
 }
-@-webkit-keyframes wobbling {
-  0% {
-      margin-top: -10%;
-      margin-left: 0%;
-    }
-    20% {
-      margin-top: -15%;
-      margin-left: 7%;
-    }
-    50% {
-      margin-top: -8%;
-      margin-left: 13%;
-    }
-    70% {
-      margin-top: -0%;
-      margin-left: 5%;
-    }
-    100% {
-      margin-top: -10%;
-      margin-left: 0%;
-    }
-  }
-  @keyframes wobbling {
-    0% {
-        margin-top: -1%;
-        margin-left: 0%;
-      }
-      20% {
-        margin-top: -2%;
-      }
-      30% {
-        margin-left: 1%;
-      }
-      50% {
-          margin-top: -1%;
-          margin-left: 0%;
-        }
-        70% {
-          margin-top: -2%;
-        }
-        80% {
-          margin-left: -1%;
-        }
-      100% {
-        margin-top: -1%;
-        margin-left: 0%;
-      }
-    } 
 @-webkit-keyframes glowing {
   0% {
     text-shadow: 0px 0px 2px #bfbe5fab;
