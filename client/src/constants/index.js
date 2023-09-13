@@ -155,10 +155,6 @@ const projects = [
         'Revamp the existing Searcy Water Utilities website to provide information and services to the residents of Searcy Arkansas. The website is currently still in development but nearing completion. Take a look at it in development!',
     tags: [
       {
-        name: 'Coming Soon',
-        color: '#FF0000',
-      },
-      {
         name: 'MongoDB',
         color: '#7dc353',
       },
@@ -181,7 +177,7 @@ const projects = [
     ],
     image: water,
     sourceCodeLink: '',
-    activeLink: 'http://test.searcywater.org/',
+    activeLink: 'http://searcywater.org/',
   },
   {
     name: 'FaceBlog',
