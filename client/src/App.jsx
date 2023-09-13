@@ -20,16 +20,16 @@ function App() {
         <BackgroundShapes />
         {/* <div className='pageContent'> */}
           <div className='spacer'/>
-          <div className='starsPlacement'>
+          {/* <div className='starsPlacement'> */}
           <Hero />
           <Current />
           <History />
           <Tech />
           <Portfolio />
             <Contact />
-            <StarsCanvas />
+            {/* <StarsCanvas /> */}
           {/* </div> */}
-        </div>
+        {/* </div> */}
     </BrowserRouter>
   );
 }
