@@ -106,7 +106,7 @@ button:hover {
 }
 #history {
   display: block;
-  padding-bottom: 120px;
+  padding-bottom: 50px;
   transition: all 0.5s ease-in-out !important;
 }
 .glassmorphism{
@@ -220,9 +220,9 @@ button:hover {
       font-size: 4rem;
       text-align: center;
   }
-  #history {
+  /* #history {
     padding-bottom: 260px;
-  }
+  } */
 }
 
 /* Large Screens - 1200px */
@@ -236,9 +236,9 @@ button:hover {
 }
 
 @media screen and (max-width: 1020px){
-  #history {
+  /* #history {
     padding-bottom: 360px;
-  }
+  } */
 }
 
 /* Medium Screens - 900px */
