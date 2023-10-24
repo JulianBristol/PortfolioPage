@@ -151,8 +151,7 @@ const experiences = [
 const projects = [
   {
     name: 'Searcy Water Utilities',
-    description:
-        'Revamp the existing Searcy Water Utilities website to provide information and services to the residents of Searcy Arkansas. The website is currently still in development but nearing completion. Take a look at it in development!',
+    description: 'Revamp the existing Searcy Water Utilities website to provide information and services to the residents of Searcy Arkansas.',
     tags: [
       {
         name: 'MongoDB',
@@ -181,8 +180,7 @@ const projects = [
   },
   {
     name: 'FaceBlog',
-    description:
-        'FaceBlog is a website that combines my portfolio, blog, and thoughts with AI-generated profiles and posts. Built using ReactJS, Javascript, MUI, and several APIs, it aims to help people learn more about me and my ideas.',
+    description: 'FaceBlog is a website that combines my portfolio, blog, and thoughts with AI-generated profiles and posts. Built using ReactJS, Javascript, MUI, and several APIs, it aims to help people learn more about me and my ideas.',
     tags: [
       {
         name: 'React.js',
@@ -203,8 +201,7 @@ const projects = [
   },
   {
     name: 'Travel Wisely',
-    description:
-    'A comprehensive a platform that empowers users with location-based information, weather forecasts, and recommendations for nearby restaurants, hotels, and attractions. It helps users make informed travel decisions and explore new places with confidence.',
+    description: 'A comprehensive platform that empowers users with location-based information, weather forecasts, and recommendations for nearby restaurants, hotels, and attractions. It helps users make informed travel decisions and explore new places with confidence.',
     tags: [
       {
         name: 'React.js',
@@ -225,8 +222,7 @@ const projects = [
   },
   {
     name: 'Heaven\'s Vault Translator',
-    description:
-    'Heaven\'s Vault is a game with an interesting gimmick where you need to translate ancient runes into modern day language. This program acts as a translator of sorts, allowing you to Create, Read, Update, and Delete words and their meanings.',
+    description: 'Heaven\'s Vault is a game with an interesting gimmick where you need to translate ancient runes into modern day language. This program acts as a translator of sorts, allowing you to Create, Read, Update, and Delete words and their meanings.',
     tags: [
       {
         name: 'Java',
@@ -250,8 +246,7 @@ const projects = [
   },
   {
     name: 'Cloudinary Image Viewer',
-    description:
-    'Cloudinary is a cloud-enabled image and video storage and management site. This application displays my abilities to work with Cloudinary\'s API to upload, store, and retrieve images for viewer consumption. While originally intended to work with a backend server, the code has been recently modified for display using Netlify\'s serverless backend',
+    description: 'Cloudinary is a cloud-enabled image and video storage and management site. This application displays my abilities to work with Cloudinary\'s API to upload, store, and retrieve images for viewer consumption. While originally intended to work with a backend server, the code has been recently modified for display using Netlify\'s serverless backend',
     tags: [
       {
         name: 'React.js',

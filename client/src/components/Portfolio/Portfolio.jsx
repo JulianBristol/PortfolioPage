@@ -10,11 +10,10 @@ import './PortfolioCSS.css';
 
 const Portfolio = () => (
     <div className='glassmorphism' style={{ maxWidth: '1500px' }}>
-      {/* Original */}
-        <motion.div variants={textVariant()} style={{ display: 'grid' }}>
+        <motion.div whileInView="show" variants={textVariant()} style={{ display: 'grid' }}>
             <h2 className='sectionTitle'>Check Out My Projects</h2>
         </motion.div>
-        <motion.p className='sectionDesc' variants={fadeIn('', '', 0.1, 1)}>
+        <motion.p whileInView="show" className='sectionDesc' variants={fadeIn('', '', 0.1, 1)}>
             {/* eslint-disable-next-line max-len */}
             These projects demonstrate my skills and experience with real-life examples of my work. Each project is described briefly and includes links to where you can see the code and how it works. They show how I can solve tough problems, work with different technologies, and lead projects well.
         </motion.p>
@@ -31,7 +30,9 @@ const Portfolio = () => (
 );
 
 const ProjectCard = ({ index, name, description, tags, image, sourceCodeLink, activeLink }) => (
-        <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+          <div key={index}>
+        {/* <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+          {console.log(description)} */}
             <Tilt
                 options={{
                   max: 15,
@@ -79,7 +80,8 @@ const ProjectCard = ({ index, name, description, tags, image, sourceCodeLink, ac
                 </div>
                 </div>
             </Tilt>
-        </motion.div>
+        {/* </motion.div> */}
+            </div>
 );
 
 ProjectCard.propTypes = {
