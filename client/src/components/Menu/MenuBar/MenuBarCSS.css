@@ -9,7 +9,7 @@
     border-radius: 17px;
     box-shadow: 0 0 5px var(--red-dull);
     border: 1px solid var(--red-neon);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 #menuBarContainer.active{
     background: linear-gradient(180deg, #713939 0%, #120606 1.4%, #120606 98%, #321717 99%, #120606 100%);
@@ -24,7 +24,7 @@
     border-right: 0px solid red;
 }
 .menuBtnContainer{
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .menuBtnContainer.active{
     margin-top: 10px;
