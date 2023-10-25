@@ -17,7 +17,8 @@ import {
   water,
   blog,
   travelWisely,
-  cloudinaryDemo,
+  breadit,
+  /* cloudinaryDemo, */
   heavensVault,
 } from '../assets';
 
@@ -150,6 +151,35 @@ const experiences = [
 
 const projects = [
   {
+    name: 'Breadit',
+    description: 'Breadit is a Reddit clone for just about anything you can think of. Feel free to signup for an account and post whatever you like. It is a FullStack application that employs concepts like infinite scrolling, caching, authentication, optimistic updates and more.',
+    tags: [
+      {
+        name: 'React.js',
+        color: '#00d9ff',
+      },
+      {
+        name: 'TypeScript',
+        color: '#07ff00',
+      },
+      {
+        name: 'TailwindCSS',
+        color: '#a0eba8',
+      },
+      {
+        name: 'MongoDB',
+        color: '#7dc353',
+      },
+      {
+        name: 'Redux',
+        color: '#adc3c3',
+      },
+    ],
+    image: breadit,
+    sourceCodeLink: 'https://github.com/JulianBristol/Breadit',
+    activeLink: 'https://breadit.netlify.app/',
+  },
+  {
     name: 'Searcy Water Utilities',
     description: 'Revamp the existing Searcy Water Utilities website to provide information and services to the residents of Searcy Arkansas.',
     tags: [
@@ -243,7 +273,7 @@ const projects = [
     ],
     image: heavensVault,
     activeLink: 'https://github.com/JulianBristol/HeavensVaultTranslator',
-  },
+  }/*
   {
     name: 'Cloudinary Image Viewer',
     description: 'Cloudinary is a cloud-enabled image and video storage and management site. This application displays my abilities to work with Cloudinary\'s API to upload, store, and retrieve images for viewer consumption. While originally intended to work with a backend server, the code has been recently modified for display using Netlify\'s serverless backend',
@@ -272,7 +302,7 @@ const projects = [
     image: cloudinaryDemo,
     sourceCodeLink: 'https://github.com/JulianBristol/CloudinaryImageUpload_Demo',
     activeLink: 'https://cloudinaryupload.netlify.app/',
-  },
+  }, */
 ];
 
 export { technologies, experiences, projects };

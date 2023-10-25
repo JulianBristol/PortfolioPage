@@ -22,6 +22,7 @@ import blog from './BlogSonia.webp';
 import travelWisely from './TravelWisely.webp';
 import heavensVault from './HeavensVault.webp';
 import cloudinaryDemo from './CloudinaryDemo.webp';
+import breadit from './Breadit.webp';
 
 export {
   github,
@@ -45,4 +46,5 @@ export {
   cloudinaryDemo,
   travelWisely,
   heavensVault,
+  breadit,
 };
