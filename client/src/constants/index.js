@@ -14,10 +14,12 @@ import {
   figma,
   capella,
   lykka,
+  smartwiz,
   water,
   blog,
   travelWisely,
   breadit,
+  wanderInn,
   /* cloudinaryDemo, */
   heavensVault,
 } from '../assets';
@@ -140,16 +142,60 @@ const experiences = [
     title: 'UI/UX Contractor and Front-End Developer',
     companyName: 'Consultancy',
     icon: logo,
-    date: 'Feb 2023 - Present',
+    date: 'Feb 2023 - Sept 2023',
     points: [
       'Collaborate with stakeholders and other developers to create flexible designs and create custom web solutions',
       'Develop responsive and user-friendly websites using HTML, CSS, JavaScript, and other web technologies',
       'Design visually appealing and engaging user interfaces',
     ],
   },
+  {
+    title: 'Software Developer',
+    companyName: 'SmartWiz',
+    icon: smartwiz,
+    date: 'Nov 2023 - Present',
+    points: [
+      `Collaborate with product managers, design, and QA teams to translate business requirements into scalable web experiences, 
+      ensuring effective communication and seamless integration throughout the development process.`,
+      `Utilized expertise in React.js, TypeScript, and other modern web technologies to build user-friendly and 
+      responsive web experiences driving customer engagement and retention.`,
+      `Reviewed code for complex software modules, consistently adhering to industry best practices
+      and coding standards.`,
+    ],
+  },
 ];
 
 const projects = [
+  {
+    name: 'WanderInn',
+    description: `Discover unique stays, from cozy cabins to urban lofts, and everything in between. 
+    With WanderInn, you'll find the ideal place to call home while you explore new destinations.`,
+    tags: [
+      {
+        name: 'React.js',
+        color: '#00d9ff',
+      },
+      {
+        name: 'TypeScript',
+        color: '#07ff00',
+      },
+      {
+        name: 'TailwindCSS',
+        color: '#a0eba8',
+      },
+      {
+        name: 'MongoDB',
+        color: '#7dc353',
+      },
+      {
+        name: 'Redux',
+        color: '#adc3c3',
+      },
+    ],
+    image: wanderInn,
+    sourceCodeLink: 'https://github.com/JulianBristol/WanderInn',
+    activeLink: 'https://wanderinn.vercel.app/',
+  },
   {
     name: 'Breadit',
     description: 'Breadit is a Reddit clone for just about anything you can think of. Feel free to signup for an account and post whatever you like. It is a FullStack application that employs concepts like infinite scrolling, caching, authentication, optimistic updates and more.',

@@ -16,6 +16,7 @@ import nextjs from './tech/nextjs.webp';
 
 import capella from './company/capella.webp';
 import lykka from './company/lykka.webp';
+import smartwiz from './company/smartwiz.webp';
 
 import water from './SearcyWaterUtilities.webp';
 import blog from './BlogSonia.webp';
@@ -23,6 +24,7 @@ import travelWisely from './TravelWisely.webp';
 import heavensVault from './HeavensVault.webp';
 import cloudinaryDemo from './CloudinaryDemo.webp';
 import breadit from './Breadit.webp';
+import wanderInn from './WanderInn.webp';
 
 export {
   github,
@@ -47,4 +49,6 @@ export {
   travelWisely,
   heavensVault,
   breadit,
+  smartwiz,
+  wanderInn,
 };
